@@ -29,8 +29,14 @@
     <meta property="twitter:description" content="Learn about Namuna Law Associates, a full-service law firm in Nepal." />
     <meta property="twitter:image" content="https://namunalawassociates.com.np/images/og-image.jpg" />
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!-- ============================================================
+    FAVICON
+    ============================================================ -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="images/favicon-512x512.png" />
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -369,6 +375,7 @@
             font-size: 0.98rem;
             line-height: 1.9;
             margin-bottom: 16px;
+            text-align: justify;
         }
 
         .about-content h3 {
@@ -388,34 +395,7 @@
             color: #b8860b;
         }
 
-        .about-content ul {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 16px;
-        }
-
-        .about-content ul li {
-            font-family: 'Inter', sans-serif;
-            color: #555;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            padding: 6px 0 6px 28px;
-            position: relative;
-        }
-
-        .about-content ul li::before {
-            content: '▸';
-            position: absolute;
-            left: 0;
-            color: #b8860b;
-            font-weight: 700;
-        }
-
-        .about-content ul li strong {
-            color: #1a1a2e;
-            font-weight: 600;
-        }
-
+        /* Value Items (for both Core Values and Objectives) */
         .about-content .value-item {
             margin-bottom: 16px;
         }
@@ -441,6 +421,7 @@
             }
             .about-content p {
                 font-size: 0.92rem;
+                text-align: left;
             }
         }
 
@@ -452,9 +433,6 @@
                 font-size: 1rem;
             }
             .about-content p {
-                font-size: 0.88rem;
-            }
-            .about-content ul li {
                 font-size: 0.88rem;
             }
             .about-content .value-item strong {
@@ -725,14 +703,36 @@
 
                 <h3>Our <span class="gold">Objectives</span></h3>
                 <p>As per our Memorandum of Association, we are committed to the following objectives:</p>
-                <ul>
-                    <li><strong>Legal Activities</strong> – Providing legal services, advocacy, and legal consultation to individuals, businesses, and organizations.</li>
-                    <li><strong>Research &amp; Development</strong> – Conducting social science and humanities research to inform legal practice and policy development.</li>
-                    <li><strong>Administrative Support</strong> – Offering office administration and support services to facilitate efficient legal operations.</li>
-                    <li><strong>Documentation</strong> – Providing photocopying, document preparation, and specialized office support services.</li>
-                    <li><strong>Publishing</strong> – Producing legal publications, research papers, and knowledge resources for the legal community.</li>
-                    <li><strong>Professional Services</strong> – Delivering professional, scientific, and technical activities to support the legal profession.</li>
-                </ul>
+
+                <div class="value-item">
+                    <strong>Legal Activities</strong>
+                    <p>Providing legal services, advocacy, and legal consultation to individuals, businesses, and organizations. We are dedicated to offering expert legal guidance across a broad range of practice areas.</p>
+                </div>
+
+                <div class="value-item">
+                    <strong>Research &amp; Development</strong>
+                    <p>Conducting social science and humanities research to inform legal practice and policy development. Our research-driven approach ensures that our legal strategies are grounded in evidence and sound analysis.</p>
+                </div>
+
+                <div class="value-item">
+                    <strong>Administrative Support</strong>
+                    <p>Offering office administration and support services to facilitate efficient legal operations. We ensure that our administrative systems are robust and responsive to the needs of our clients and legal team.</p>
+                </div>
+
+                <div class="value-item">
+                    <strong>Documentation</strong>
+                    <p>Providing photocopying, document preparation, and specialized office support services. We recognize the critical role of accurate documentation in effective legal practice.</p>
+                </div>
+
+                <div class="value-item">
+                    <strong>Publishing</strong>
+                    <p>Producing legal publications, research papers, and knowledge resources for the legal community. We are committed to contributing to the development of legal knowledge and scholarship in Nepal.</p>
+                </div>
+
+                <div class="value-item">
+                    <strong>Professional Services</strong>
+                    <p>Delivering professional, scientific, and technical activities to support the legal profession. We provide a comprehensive range of services that meet the diverse needs of our clients.</p>
+                </div>
 
                 <h3>Our <span class="gold">Core Values</span></h3>
 
