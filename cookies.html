@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- ============================================================
+    SEO META TAGS
+    ============================================================ -->
+    <title>Cookie Policy - Namuna Law Associates</title>
+    <meta name="title" content="Cookie Policy - Namuna Law Associates" />
+    <meta name="description" content="Read the Cookie Policy of Namuna Law Associates. Learn about the types of cookies we use, how we use them, and how you can manage your cookie preferences." />
+    <meta name="keywords" content="cookie policy, cookies, data privacy, website cookies, Namuna Law Associates" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Namuna Law Associates Private Limited" />
+    <link rel="canonical" href="https://namunalawassociates.com.np/cookies.html" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://namunalawassociates.com.np/cookies.html" />
+    <meta property="og:title" content="Cookie Policy - Namuna Law Associates" />
+    <meta property="og:description" content="Read the Cookie Policy of Namuna Law Associates." />
+    <meta property="og:image" content="https://namunalawassociates.com.np/images/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://namunalawassociates.com.np/cookies.html" />
+    <meta property="twitter:title" content="Cookie Policy - Namuna Law Associates" />
+    <meta property="twitter:description" content="Read the Cookie Policy of Namuna Law Associates." />
+    <meta property="twitter:image" content="https://namunalawassociates.com.np/images/og-image.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+        /* ============================================================
+        CSS RESET & BASE - Law Colors Only
+        Colors: Deep Navy (#1a1a2e), Gold (#b8860b), 
+                Charcoal (#f5f3f0), White (#ffffff)
+        ============================================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: #1a1a2e;
+            overflow-x: hidden;
+            line-height: 1.8;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f0eee8;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b8860b;
+            border-radius: 4px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============================================================
+        COOKIE CONSENT BANNER
+        ============================================================ */
+        .cookie-consent {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            z-index: 10000;
+            width: 90%;
+            max-width: 900px;
+            background: #1a1a2e;
+            border-left: 4px solid #b8860b;
+            border-radius: 8px;
+            padding: 18px 28px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.5s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .cookie-consent.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .cookie-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .cookie-content {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .cookie-icon {
+            font-size: 1.4rem;
+            color: #b8860b;
+            flex-shrink: 0;
+        }
+
+        .cookie-text {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .cookie-text h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 1px;
+        }
+
+        .cookie-text p {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 1.5;
+        }
+
+        .cookie-text p a {
+            color: #b8860b;
+            font-weight: 500;
+        }
+
+        .cookie-text p a:hover {
+            color: #d4a017;
+        }
+
+        .cookie-actions {
+            display: flex;
+            gap: 10px;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+        }
+
+        .cookie-btn {
+            padding: 6px 18px;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .cookie-btn-accept {
+            background: #b8860b;
+            color: #ffffff;
+        }
+
+        .cookie-btn-accept:hover {
+            background: #8a6a08;
+        }
+
+        .cookie-btn-decline {
+            background: rgba(255, 255, 255, 0.06);
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .cookie-btn-decline:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .cookie-btn-settings {
+            background: transparent;
+            color: rgba(255, 255, 255, 0.3);
+            padding: 6px 10px;
+        }
+
+        .cookie-btn-settings:hover {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .cookie-consent {
+                bottom: 10px;
+                padding: 14px 18px;
+                width: 95%;
+            }
+            .cookie-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            .cookie-actions {
+                justify-content: center;
+            }
+        }
+
+        /* ============================================================
+        HEADER BANNER IMAGE - TOP CENTER
+        Aspect Ratio: 10:3 | Width: 500px | Height: 150px
+        ============================================================ */
+        .header-banner {
+            width: 100%;
+            padding: 0;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-banner img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            aspect-ratio: 10 / 3;
+            object-fit: contain;
+            display: block;
+            background: #f5f3f0;
+        }
+
+        @media (max-width: 600px) {
+            .header-banner img {
+                max-width: 100%;
+            }
+        }
+
+        /* ============================================================
+        NAVIGATION TABS (Below Banner Image)
+        All tabs including Contact styled the same
+        ============================================================ */
+        .nav-tabs {
+            background: #ffffff;
+            border-bottom: 2px solid #b8860b;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 10px rgba(184, 134, 11, 0.04);
+        }
+
+        .nav-tabs a {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #555;
+            padding: 14px 32px;
+            transition: all 0.3s ease;
+            position: relative;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .nav-tabs a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 4px;
+            background: #b8860b;
+            transition: width 0.3s ease;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .nav-tabs a:hover,
+        .nav-tabs a.active {
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+
+        .nav-tabs a:hover::after,
+        .nav-tabs a.active::after {
+            width: 70%;
+        }
+
+        @media (max-width: 768px) {
+            .nav-tabs {
+                gap: 4px;
+                padding: 8px 0;
+            }
+            .nav-tabs a {
+                padding: 10px 16px;
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-tabs a {
+                padding: 8px 10px;
+                font-size: 0.6rem;
+            }
+        }
+
+        /* ============================================================
+        SECTION COMMON STYLES
+        ============================================================ */
+        section {
+            padding: 70px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            letter-spacing: 0.5px;
+        }
+
+        .section-header h2 .gold {
+            color: #b8860b;
+        }
+
+        /* ============================================================
+        LEGAL CONTENT - Cookie Policy
+        ============================================================ */
+        .legal-section {
+            padding: 70px 0;
+            background: #ffffff;
+        }
+
+        .legal-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .legal-content .last-updated {
+            font-family: 'Inter', sans-serif;
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .legal-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .legal-content h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .legal-content h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        .legal-content p {
+            font-family: 'Inter', sans-serif;
+            color: #555;
+            font-size: 0.98rem;
+            line-height: 1.9;
+            margin-bottom: 14px;
+        }
+
+        .legal-content ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 16px;
+        }
+
+        .legal-content ul li {
+            font-family: 'Inter', sans-serif;
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            padding: 6px 0 6px 28px;
+            position: relative;
+        }
+
+        .legal-content ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #b8860b;
+            font-weight: 700;
+        }
+
+        .legal-content ul li strong {
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+
+        .legal-content .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0 30px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.92rem;
+        }
+
+        .legal-content .cookie-table thead th {
+            background: #f5f3f0;
+            color: #1a1a2e;
+            font-weight: 600;
+            text-align: left;
+            padding: 12px 16px;
+            border-bottom: 2px solid #b8860b;
+        }
+
+        .legal-content .cookie-table tbody td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+            color: #555;
+            vertical-align: top;
+        }
+
+        .legal-content .cookie-table tbody tr:hover {
+            background: #faf9f7;
+        }
+
+        .legal-content .cookie-table .cookie-name {
+            font-weight: 500;
+            color: #1a1a2e;
+        }
+
+        .legal-content a {
+            color: #b8860b;
+            font-weight: 500;
+        }
+
+        .legal-content a:hover {
+            color: #8a6a08;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .legal-section {
+                padding: 50px 0;
+            }
+            .legal-content h3 {
+                font-size: 1.15rem;
+            }
+            .legal-content p {
+                font-size: 0.92rem;
+            }
+            .legal-content .cookie-table {
+                font-size: 0.8rem;
+            }
+            .legal-content .cookie-table thead th,
+            .legal-content .cookie-table tbody td {
+                padding: 8px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+            .legal-content h3 {
+                font-size: 1rem;
+            }
+            .legal-content p {
+                font-size: 0.88rem;
+            }
+            .legal-content ul li {
+                font-size: 0.88rem;
+            }
+            .legal-content .cookie-table {
+                font-size: 0.7rem;
+            }
+            .legal-content .cookie-table thead th,
+            .legal-content .cookie-table tbody td {
+                padding: 6px 8px;
+            }
+        }
+
+        /* ============================================================
+        CTA SECTION - White Background
+        Schedule Consultation links to advshobhap@gmail.com
+        ============================================================ */
+        .cta-section {
+            background: #ffffff;
+            text-align: center;
+            padding: 60px 0;
+            border-top: 2px solid #b8860b;
+            border-bottom: 2px solid #b8860b;
+        }
+
+        .cta-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .cta-content h2 .gold {
+            color: #b8860b;
+        }
+
+        .cta-content p {
+            font-family: 'Inter', sans-serif;
+            color: #666;
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto 28px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 32px;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-gold {
+            background: #b8860b;
+            color: #ffffff;
+        }
+
+        .btn-gold:hover {
+            background: #8a6a08;
+            color: #ffffff;
+        }
+
+        .btn-outline-dark {
+            background: transparent;
+            color: #1a1a2e;
+            border: 2px solid #b8860b;
+        }
+
+        .btn-outline-dark:hover {
+            background: #b8860b;
+            color: #ffffff;
+        }
+
+        @media (max-width: 480px) {
+            .cta-content h2 {
+                font-size: 1.8rem;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                max-width: 260px;
+                justify-content: center;
+            }
+        }
+
+        /* ============================================================
+        FOOTER - White Background, No Reg. No.
+        ============================================================ */
+        .site-footer {
+            background: #ffffff;
+            padding: 50px 0 24px;
+            border-top: 3px solid #b8860b;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 35px;
+        }
+
+        .footer-brand h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 2px;
+        }
+
+        .footer-brand h3 .gold {
+            color: #b8860b;
+        }
+
+        .footer-brand p {
+            font-family: 'Inter', sans-serif;
+            color: #666;
+            font-size: 0.88rem;
+            line-height: 1.8;
+            max-width: 300px;
+        }
+
+        .footer-links h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #1a1a2e;
+            margin-bottom: 14px;
+            border-bottom: 2px solid #b8860b;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .footer-links ul li a {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: #777;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links ul li a:hover {
+            color: #b8860b;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .footer-bottom p {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            color: #999;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                text-align: center;
+            }
+            .footer-brand p {
+                max-width: 100%;
+            }
+            .footer-links h4 {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-brand h3 {
+                font-size: 1.2rem;
+            }
+            .cta-content h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+    COOKIE CONSENT BANNER
+    ============================================================ -->
+    <div id="cookie-consent" class="cookie-consent" style="display:none;">
+        <div class="cookie-container">
+            <div class="cookie-content">
+                <div class="cookie-icon"><i class="fas fa-cookie-bite"></i></div>
+                <div class="cookie-text">
+                    <h4>Privacy Notice</h4>
+                    <p>We use cookies to enhance your experience. By clicking "Accept All", you consent to our use of cookies. <a href="cookies.html">Learn More</a></p>
+                </div>
+                <div class="cookie-actions">
+                    <button id="cookie-accept" class="cookie-btn cookie-btn-accept"><i class="fas fa-check"></i> Accept</button>
+                    <button id="cookie-decline" class="cookie-btn cookie-btn-decline">Decline</button>
+                    <button id="cookie-settings" class="cookie-btn cookie-btn-settings"><i class="fas fa-cog"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    HEADER BANNER IMAGE - TOP CENTER
+    Aspect Ratio: 10:3 | Width: 500px | Height: 150px
+    ============================================================ -->
+    <div class="header-banner">
+        <img src="images/nla.png" alt="Namuna Law Associates" width="500" height="150" />
+    </div>
+
+    <!-- ============================================================
+    NAVIGATION TABS (Below Banner Image)
+    All tabs including Contact styled the same
+    ============================================================ -->
+    <div class="nav-tabs">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="advocate.html">Advocates</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- ============================================================
+    COOKIE POLICY - LEGAL CONTENT
+    ============================================================ -->
+    <section class="legal-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cookie <span class="gold">Policy</span></h2>
+            </div>
+
+            <div class="legal-content" data-aos="fade-up" data-aos-delay="100">
+                <p class="last-updated">Last Updated: July 2026</p>
+
+                <h3>1. Introduction</h3>
+                <p>
+                    This Cookie Policy explains how <strong>Namuna Law Associates Private Limited</strong> ("we," "us," or "our") uses cookies and similar tracking technologies on our website <strong>namunalawassociates.com.np</strong> (the "Website"). This policy explains what cookies are, how we use them, and how you can control your cookie preferences. By using our Website, you consent to the use of cookies in accordance with this Cookie Policy.
+                </p>
+                <p>
+                    We are committed to transparency about our use of cookies and to providing you with meaningful choices about how your data is collected and used. This Cookie Policy works in conjunction with our <a href="privacy.html">Privacy Policy</a>, which provides further information about how we handle your personal information.
+                </p>
+
+                <h3>2. What Are Cookies?</h3>
+                <p>
+                    Cookies are small text files that are placed on your computer, smartphone, tablet, or other device when you visit a website. They are widely used to make websites work more efficiently, to enhance user experience, and to provide information to the site owners. Cookies are stored by your browser and contain information that can be read by the website that placed them.
+                </p>
+                <p>
+                    Cookies serve various purposes, including:
+                </p>
+                <ul>
+                    <li><strong>Essential Functionality:</strong> Enabling core features such as page navigation and access to secure areas of the website.</li>
+                    <li><strong>Performance:</strong> Collecting information about how visitors use the website to improve its performance and functionality.</li>
+                    <li><strong>Preferences:</strong> Remembering your choices and preferences to provide a more personalized experience.</li>
+                    <li><strong>Analytics:</strong> Helping us understand how visitors interact with our website so we can improve it.</li>
+                </ul>
+
+                <h3>3. Types of Cookies We Use</h3>
+                <p>
+                    We use the following categories of cookies on our Website:
+                </p>
+
+                <h4>3.1 Strictly Necessary Cookies</h4>
+                <p>
+                    These cookies are essential for you to browse our Website and use its core features. Without these cookies, services such as navigating between pages, accessing secure areas, and basic website functionality cannot be provided. These cookies do not collect any personal information and are necessary for the operation of our Website.
+                </p>
+
+                <h4>3.2 Performance and Analytics Cookies</h4>
+                <p>
+                    These cookies collect information about how visitors use our Website, such as which pages are visited most frequently, how visitors navigate through the site, and any error messages encountered. This information helps us improve the performance and functionality of our Website. All data collected is aggregated and anonymous.
+                </p>
+
+                <h4>3.3 Functionality and Preference Cookies</h4>
+                <p>
+                    These cookies allow our Website to remember choices you make and preferences you set, such as your language preference, region, or the pages you have visited. These cookies enhance your user experience by providing a more personalized browsing experience.
+                </p>
+
+                <h4>3.4 Third-Party Cookies</h4>
+                <p>
+                    We may allow third-party service providers to place cookies on your device for analytics and performance purposes. These third parties include analytics providers that help us understand how our Website is used. These cookies are subject to the privacy policies of the third-party providers.
+                </p>
+
+                <h3>4. Specific Cookies We Use</h3>
+                <p>
+                    The following table provides detailed information about the cookies we use on our Website:
+                </p>
+
+                <table class="cookie-table">
+                    <thead>
+                        <tr>
+                            <th>Cookie Name</th>
+                            <th>Type</th>
+                            <th>Purpose</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cookie-name">cookie_consent</td>
+                            <td>Strictly Necessary</td>
+                            <td>Stores your cookie consent preference to avoid showing the cookie banner repeatedly.</td>
+                            <td>365 days</td>
+                        </tr>
+                        <tr>
+                            <td class="cookie-name">_ga</td>
+                            <td>Analytics</td>
+                            <td>Used by Google Analytics to distinguish unique users and track session data.</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr>
+                            <td class="cookie-name">_gid</td>
+                            <td>Analytics</td>
+                            <td>Used by Google Analytics to store and update a unique value for each page visited.</td>
+                            <td>24 hours</td>
+                        </tr>
+                        <tr>
+                            <td class="cookie-name">_gat</td>
+                            <td>Analytics</td>
+                            <td>Used by Google Analytics to throttle request rate and manage data collection.</td>
+                            <td>1 minute</td>
+                        </tr>
+                        <tr>
+                            <td class="cookie-name">session_id</td>
+                            <td>Strictly Necessary</td>
+                            <td>Maintains session state and enables essential website functionality.</td>
+                            <td>Session</td>
+                        </tr>
+                        <tr>
+                            <td class="cookie-name">preferences</td>
+                            <td>Functionality</td>
+                            <td>Stores user preferences and settings for a personalized experience.</td>
+                            <td>30 days</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    <em>Note: The specific cookies used may vary depending on updates to our Website and third-party services. We regularly review and update our cookie usage to ensure compliance with applicable laws and best practices.</em>
+                </p>
+
+                <h3>5. How We Use Cookies</h3>
+                <p>
+                    We use cookies for the following purposes:
+                </p>
+                <ul>
+                    <li><strong>Website Functionality:</strong> To enable essential features of our Website and ensure its proper operation.</li>
+                    <li><strong>Performance Monitoring:</strong> To analyze how users interact with our Website and identify areas for improvement.</li>
+                    <li><strong>User Experience:</strong> To remember your preferences and provide a more personalized browsing experience.</li>
+                    <li><strong>Security:</strong> To enhance the security of our Website and protect against unauthorized access.</li>
+                    <li><strong>Legal Compliance:</strong> To comply with applicable legal and regulatory requirements regarding data protection and privacy.</li>
+                </ul>
+
+                <h3>6. Your Consent and Control</h3>
+                <p>
+                    When you first visit our Website, we will ask for your consent to use non-essential cookies through our cookie consent banner. You can:
+                </p>
+                <ul>
+                    <li><strong>Accept All Cookies:</strong> By clicking "Accept All" or continuing to use our Website, you consent to the use of all cookies as described in this policy.</li>
+                    <li><strong>Decline Non-Essential Cookies:</strong> By clicking "Decline" you can reject the use of non-essential cookies. Essential cookies will still be used to ensure the basic functionality of our Website.</li>
+                    <li><strong>Manage Your Preferences:</strong> You can change your cookie preferences at any time by adjusting your browser settings.</li>
+                </ul>
+
+                <h3>7. Managing Cookies Through Your Browser</h3>
+                <p>
+                    Most web browsers allow you to control cookies through their settings. You can configure your browser to:
+                </p>
+                <ul>
+                    <li><strong>Block All Cookies:</strong> Prevent websites from placing cookies on your device.</li>
+                    <li><strong>Delete Existing Cookies:</strong> Remove cookies that have already been stored on your device.</li>
+                    <li><strong>Block Third-Party Cookies:</strong> Accept only first-party cookies and block cookies from third parties.</li>
+                    <li><strong>Require Consent Before Setting Cookies:</strong> Configure your browser to request your permission before any website can place a cookie on your device.</li>
+                </ul>
+                <p>
+                    The method for managing cookies varies by browser. Below are links to instructions for managing cookie settings in common browsers:
+                </p>
+                <ul>
+                    <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
+                    <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
+                    <li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac" target="_blank" rel="noopener noreferrer">Safari</a></li>
+                    <li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></li>
+                    <li><a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DAndroid&hl=en" target="_blank" rel="noopener noreferrer">Chrome (Android)</a></li>
+                    <li><a href="https://support.apple.com/en-us/105082" target="_blank" rel="noopener noreferrer">Safari (iOS)</a></li>
+                </ul>
+                <p>
+                    Please note that if you choose to block or delete cookies, some features of our Website may not function correctly, and your user experience may be affected.
+                </p>
+
+                <h3>8. Duration of Cookies</h3>
+                <p>
+                    Cookies have different durations depending on their purpose:
+                </p>
+                <ul>
+                    <li><strong>Session Cookies:</strong> These cookies are temporary and are deleted automatically when you close your browser. They are used to maintain session state and enable essential functionality during your visit.</li>
+                    <li><strong>Persistent Cookies:</strong> These cookies remain on your device for a specified period or until you manually delete them. They are used to remember your preferences and enhance your user experience across multiple visits.</li>
+                </ul>
+
+                <h3>9. Third-Party Cookies</h3>
+                <p>
+                    We may use third-party service providers to assist us with analytics and performance monitoring. These third parties may place cookies on your device. The third-party cookies we use are subject to the privacy and cookie policies of the respective providers.
+                </p>
+                <p>
+                    Currently, we use:
+                </p>
+                <ul>
+                    <li><strong>Google Analytics:</strong> For analyzing website traffic and user behavior. Google Analytics uses cookies to collect information about how visitors use our Website. This information is used to compile reports and improve our Website. For more information, please see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</li>
+                </ul>
+                <p>
+                    We do not use third-party advertising or marketing cookies on our Website.
+                </p>
+
+                <h3>10. Changes to This Cookie Policy</h3>
+                <p>
+                    We reserve the right to update, modify, or amend this Cookie Policy at any time. Any changes will be posted on this page with an updated "Last Updated" date. Your continued use of our Website after any changes constitute your acceptance of the revised Cookie Policy. We encourage you to review this Cookie Policy periodically to stay informed about how we use cookies.
+                </p>
+
+                <h3>11. More Information</h3>
+                <p>
+                    If you have any questions, concerns, or comments about this Cookie Policy or our use of cookies, please contact us:
+                </p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:namunalawassociates@outlook.com">namunalawassociates@outlook.com</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:+9779851125875">+977-985-112-5875</a></li>
+                    <li><strong>
