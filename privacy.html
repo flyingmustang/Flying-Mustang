@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- ============================================================
+    SEO META TAGS
+    ============================================================ -->
+    <title>Privacy Policy - Namuna Law Associates</title>
+    <meta name="title" content="Privacy Policy - Namuna Law Associates" />
+    <meta name="description" content="Read the Privacy Policy of Namuna Law Associates. Learn how we collect, use, and protect your personal information when you visit our website." />
+    <meta name="keywords" content="privacy policy, data protection, personal information, legal privacy, Namuna Law Associates" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Namuna Law Associates Private Limited" />
+    <link rel="canonical" href="https://namunalawassociates.com.np/privacy.html" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://namunalawassociates.com.np/privacy.html" />
+    <meta property="og:title" content="Privacy Policy - Namuna Law Associates" />
+    <meta property="og:description" content="Read the Privacy Policy of Namuna Law Associates." />
+    <meta property="og:image" content="https://namunalawassociates.com.np/images/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://namunalawassociates.com.np/privacy.html" />
+    <meta property="twitter:title" content="Privacy Policy - Namuna Law Associates" />
+    <meta property="twitter:description" content="Read the Privacy Policy of Namuna Law Associates." />
+    <meta property="twitter:image" content="https://namunalawassociates.com.np/images/og-image.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+        /* ============================================================
+        CSS RESET & BASE - Law Colors Only
+        Colors: Deep Navy (#1a1a2e), Gold (#b8860b), 
+                Charcoal (#f5f3f0), White (#ffffff)
+        ============================================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: #1a1a2e;
+            overflow-x: hidden;
+            line-height: 1.8;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f0eee8;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b8860b;
+            border-radius: 4px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============================================================
+        COOKIE CONSENT BANNER
+        ============================================================ */
+        .cookie-consent {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            z-index: 10000;
+            width: 90%;
+            max-width: 900px;
+            background: #1a1a2e;
+            border-left: 4px solid #b8860b;
+            border-radius: 8px;
+            padding: 18px 28px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.5s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .cookie-consent.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .cookie-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .cookie-content {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .cookie-icon {
+            font-size: 1.4rem;
+            color: #b8860b;
+            flex-shrink: 0;
+        }
+
+        .cookie-text {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .cookie-text h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 1px;
+        }
+
+        .cookie-text p {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 1.5;
+        }
+
+        .cookie-text p a {
+            color: #b8860b;
+            font-weight: 500;
+        }
+
+        .cookie-text p a:hover {
+            color: #d4a017;
+        }
+
+        .cookie-actions {
+            display: flex;
+            gap: 10px;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+        }
+
+        .cookie-btn {
+            padding: 6px 18px;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .cookie-btn-accept {
+            background: #b8860b;
+            color: #ffffff;
+        }
+
+        .cookie-btn-accept:hover {
+            background: #8a6a08;
+        }
+
+        .cookie-btn-decline {
+            background: rgba(255, 255, 255, 0.06);
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .cookie-btn-decline:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .cookie-btn-settings {
+            background: transparent;
+            color: rgba(255, 255, 255, 0.3);
+            padding: 6px 10px;
+        }
+
+        .cookie-btn-settings:hover {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .cookie-consent {
+                bottom: 10px;
+                padding: 14px 18px;
+                width: 95%;
+            }
+            .cookie-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            .cookie-actions {
+                justify-content: center;
+            }
+        }
+
+        /* ============================================================
+        HEADER BANNER IMAGE - TOP CENTER
+        Aspect Ratio: 10:3 | Width: 500px | Height: 150px
+        ============================================================ */
+        .header-banner {
+            width: 100%;
+            padding: 0;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-banner img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            aspect-ratio: 10 / 3;
+            object-fit: contain;
+            display: block;
+            background: #f5f3f0;
+        }
+
+        @media (max-width: 600px) {
+            .header-banner img {
+                max-width: 100%;
+            }
+        }
+
+        /* ============================================================
+        NAVIGATION TABS (Below Banner Image)
+        All tabs including Contact styled the same
+        ============================================================ */
+        .nav-tabs {
+            background: #ffffff;
+            border-bottom: 2px solid #b8860b;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 10px rgba(184, 134, 11, 0.04);
+        }
+
+        .nav-tabs a {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #555;
+            padding: 14px 32px;
+            transition: all 0.3s ease;
+            position: relative;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .nav-tabs a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 4px;
+            background: #b8860b;
+            transition: width 0.3s ease;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .nav-tabs a:hover,
+        .nav-tabs a.active {
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+
+        .nav-tabs a:hover::after,
+        .nav-tabs a.active::after {
+            width: 70%;
+        }
+
+        @media (max-width: 768px) {
+            .nav-tabs {
+                gap: 4px;
+                padding: 8px 0;
+            }
+            .nav-tabs a {
+                padding: 10px 16px;
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-tabs a {
+                padding: 8px 10px;
+                font-size: 0.6rem;
+            }
+        }
+
+        /* ============================================================
+        SECTION COMMON STYLES
+        ============================================================ */
+        section {
+            padding: 70px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            letter-spacing: 0.5px;
+        }
+
+        .section-header h2 .gold {
+            color: #b8860b;
+        }
+
+        /* ============================================================
+        LEGAL CONTENT - Privacy Policy
+        ============================================================ */
+        .legal-section {
+            padding: 70px 0;
+            background: #ffffff;
+        }
+
+        .legal-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .legal-content .last-updated {
+            font-family: 'Inter', sans-serif;
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .legal-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .legal-content h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .legal-content p {
+            font-family: 'Inter', sans-serif;
+            color: #555;
+            font-size: 0.98rem;
+            line-height: 1.9;
+            margin-bottom: 14px;
+        }
+
+        .legal-content ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 16px;
+        }
+
+        .legal-content ul li {
+            font-family: 'Inter', sans-serif;
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            padding: 6px 0 6px 28px;
+            position: relative;
+        }
+
+        .legal-content ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #b8860b;
+            font-weight: 700;
+        }
+
+        .legal-content ul li strong {
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+
+        .legal-content a {
+            color: #b8860b;
+            font-weight: 500;
+        }
+
+        .legal-content a:hover {
+            color: #8a6a08;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .legal-section {
+                padding: 50px 0;
+            }
+            .legal-content h3 {
+                font-size: 1.15rem;
+            }
+            .legal-content p {
+                font-size: 0.92rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+            .legal-content h3 {
+                font-size: 1rem;
+            }
+            .legal-content p {
+                font-size: 0.88rem;
+            }
+            .legal-content ul li {
+                font-size: 0.88rem;
+            }
+        }
+
+        /* ============================================================
+        CTA SECTION - White Background
+        Schedule Consultation links to advshobhap@gmail.com
+        ============================================================ */
+        .cta-section {
+            background: #ffffff;
+            text-align: center;
+            padding: 60px 0;
+            border-top: 2px solid #b8860b;
+            border-bottom: 2px solid #b8860b;
+        }
+
+        .cta-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .cta-content h2 .gold {
+            color: #b8860b;
+        }
+
+        .cta-content p {
+            font-family: 'Inter', sans-serif;
+            color: #666;
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto 28px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 32px;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-gold {
+            background: #b8860b;
+            color: #ffffff;
+        }
+
+        .btn-gold:hover {
+            background: #8a6a08;
+            color: #ffffff;
+        }
+
+        .btn-outline-dark {
+            background: transparent;
+            color: #1a1a2e;
+            border: 2px solid #b8860b;
+        }
+
+        .btn-outline-dark:hover {
+            background: #b8860b;
+            color: #ffffff;
+        }
+
+        @media (max-width: 480px) {
+            .cta-content h2 {
+                font-size: 1.8rem;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                max-width: 260px;
+                justify-content: center;
+            }
+        }
+
+        /* ============================================================
+        FOOTER - White Background, No Reg. No.
+        ============================================================ */
+        .site-footer {
+            background: #ffffff;
+            padding: 50px 0 24px;
+            border-top: 3px solid #b8860b;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 35px;
+        }
+
+        .footer-brand h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 2px;
+        }
+
+        .footer-brand h3 .gold {
+            color: #b8860b;
+        }
+
+        .footer-brand p {
+            font-family: 'Inter', sans-serif;
+            color: #666;
+            font-size: 0.88rem;
+            line-height: 1.8;
+            max-width: 300px;
+        }
+
+        .footer-links h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #1a1a2e;
+            margin-bottom: 14px;
+            border-bottom: 2px solid #b8860b;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .footer-links ul li a {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: #777;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links ul li a:hover {
+            color: #b8860b;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .footer-bottom p {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            color: #999;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                text-align: center;
+            }
+            .footer-brand p {
+                max-width: 100%;
+            }
+            .footer-links h4 {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-brand h3 {
+                font-size: 1.2rem;
+            }
+            .cta-content h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+    COOKIE CONSENT BANNER
+    ============================================================ -->
+    <div id="cookie-consent" class="cookie-consent" style="display:none;">
+        <div class="cookie-container">
+            <div class="cookie-content">
+                <div class="cookie-icon"><i class="fas fa-cookie-bite"></i></div>
+                <div class="cookie-text">
+                    <h4>Privacy Notice</h4>
+                    <p>We use cookies to enhance your experience. By clicking "Accept All", you consent to our use of cookies. <a href="cookies.html">Learn More</a></p>
+                </div>
+                <div class="cookie-actions">
+                    <button id="cookie-accept" class="cookie-btn cookie-btn-accept"><i class="fas fa-check"></i> Accept</button>
+                    <button id="cookie-decline" class="cookie-btn cookie-btn-decline">Decline</button>
+                    <button id="cookie-settings" class="cookie-btn cookie-btn-settings"><i class="fas fa-cog"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    HEADER BANNER IMAGE - TOP CENTER
+    Aspect Ratio: 10:3 | Width: 500px | Height: 150px
+    ============================================================ -->
+    <div class="header-banner">
+        <img src="images/nla.png" alt="Namuna Law Associates" width="500" height="150" />
+    </div>
+
+    <!-- ============================================================
+    NAVIGATION TABS (Below Banner Image)
+    All tabs including Contact styled the same
+    ============================================================ -->
+    <div class="nav-tabs">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="advocate.html">Advocates</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- ============================================================
+    PRIVACY POLICY - LEGAL CONTENT
+    ============================================================ -->
+    <section class="legal-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Privacy <span class="gold">Policy</span></h2>
+            </div>
+
+            <div class="legal-content" data-aos="fade-up" data-aos-delay="100">
+                <p class="last-updated">Last Updated: July 2026</p>
+
+                <h3>1. Introduction</h3>
+                <p>
+                    <strong>Namuna Law Associates Private Limited</strong> ("we," "us," or "our") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <strong>namunalawassociates.com.np</strong> (the "Website"). Please read this Privacy Policy carefully. By using our Website, you consent to the collection and use of your information in accordance with this Privacy Policy.
+                </p>
+                <p>
+                    We are committed to ensuring that your privacy is protected and that your personal information is handled in accordance with applicable data protection laws and regulations. This Privacy Policy applies to all visitors, users, and others who access our Website.
+                </p>
+
+                <h3>2. Information We Collect</h3>
+                <p>
+                    We may collect and process the following categories of information when you use our Website:
+                </p>
+
+                <h4>2.1 Personal Information You Provide</h4>
+                <ul>
+                    <li><strong>Contact Information:</strong> Name, email address, phone number, and any other information you voluntarily provide when you contact us through our website, email, or other communication channels.</li>
+                    <li><strong>Inquiry Details:</strong> Information about your legal matter, service preferences, and any other details you provide when submitting inquiries or requests for consultation.</li>
+                    <li><strong>Communication Records:</strong> Records of your communications with us, including correspondence, emails, and messages sent through our Website.</li>
+                </ul>
+
+                <h4>2.2 Information Collected Automatically</h4>
+                <ul>
+                    <li><strong>Usage Data:</strong> Information about how you use our Website, including pages visited, time spent on pages, links clicked, and navigation paths.</li>
+                    <li><strong>Device Information:</strong> Your IP address, browser type, operating system, device type, and other technical information about your device.</li>
+                    <li><strong>Location Data:</strong> General geographic location derived from your IP address.</li>
+                    <li><strong>Cookie Data:</strong> Information collected through cookies and similar tracking technologies. Please see our <a href="cookies.html">Cookie Policy</a> for more details.</li>
+                </ul>
+
+                <h3>3. How We Use Your Information</h3>
+                <p>
+                    We use the information we collect for the following purposes:
+                </p>
+                <ul>
+                    <li><strong>To Provide Legal Services:</strong> To respond to your inquiries, provide legal consultation, and deliver the services you request.</li>
+                    <li><strong>To Improve Our Website:</strong> To analyze usage patterns, enhance user experience, and improve the functionality and content of our Website.</li>
+                    <li><strong>To Communicate With You:</strong> To send you information about our services, respond to your questions and requests, and provide customer support.</li>
+                    <li><strong>To Comply with Legal Obligations:</strong> To comply with applicable laws, regulations, court orders, and other legal requirements.</li>
+                    <li><strong>To Protect Our Rights:</strong> To protect the rights, property, and safety of Namuna Law Associates Private Limited, our clients, and others.</li>
+                    <li><strong>For Marketing Purposes:</strong> To send you promotional communications about our services, only with your explicit consent where required by law.</li>
+                </ul>
+
+                <h3>4. Legal Basis for Processing</h3>
+                <p>
+                    We process your personal information on the following legal bases:
+                </p>
+                <ul>
+                    <li><strong>Consent:</strong> Where you have given us explicit consent to process your personal information for specific purposes.</li>
+                    <li><strong>Contract:</strong> Where processing is necessary for the performance of a contract with you or to take steps at your request before entering into a contract.</li>
+                    <li><strong>Legal Obligation:</strong> Where processing is necessary for compliance with a legal obligation to which we are subject.</li>
+                    <li><strong>Legitimate Interests:</strong> Where processing is necessary for the purposes of our legitimate interests, provided that such interests are not overridden by your interests or fundamental rights and freedoms.</li>
+                </ul>
+
+                <h3>5. Sharing Your Information</h3>
+                <p>
+                    We do not sell, rent, or trade your personal information to third parties. We may share your information in the following circumstances:
+                </p>
+                <ul>
+                    <li><strong>Service Providers:</strong> With third-party service providers who assist us in operating our Website, conducting our business, or providing services to you, subject to confidentiality obligations.</li>
+                    <li><strong>Legal Requirements:</strong> When required by law, court order, or regulatory authority, or to protect our rights and interests.</li>
+                    <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, reorganization, or sale of assets, where your information may be transferred as part of the business transaction.</li>
+                    <li><strong>With Your Consent:</strong> Where you have given us explicit consent to share your information with third parties for specific purposes.</li>
+                </ul>
+                <p>
+                    We ensure that any third parties with whom we share your information are bound by appropriate data protection obligations and use your information only for the purposes for which it was shared.
+                </p>
+
+                <h3>6. Data Security</h3>
+                <p>
+                    We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include:
+                </p>
+                <ul>
+                    <li><strong>Encryption:</strong> Using secure socket layer (SSL) technology to encrypt data transmitted between your browser and our servers.</li>
+                    <li><strong>Access Controls:</strong> Limiting access to personal information to authorized personnel who require it to perform their duties.</li>
+                    <li><strong>Security Monitoring:</strong> Regularly monitoring our systems for potential vulnerabilities and security threats.</li>
+                    <li><strong>Data Protection Policies:</strong> Implementing and maintaining data protection policies and procedures in accordance with best practices.</li>
+                </ul>
+                <p>
+                    While we strive to protect your personal information, no method of transmission over the Internet or electronic storage is completely secure. Therefore, we cannot guarantee absolute security of your information. You acknowledge that you provide your information at your own risk.
+                </p>
+
+                <h3>7. Data Retention</h3>
+                <p>
+                    We retain your personal information only for as long as necessary to fulfill the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, or reporting requirements. The retention period may vary depending on the nature of the information and the purpose for which it was collected.
+                </p>
+                <p>
+                    In general, we retain personal information as follows:
+                </p>
+                <ul>
+                    <li><strong>Inquiry and Consultation Records:</strong> For as long as necessary to respond to your inquiry and for a reasonable period thereafter for record-keeping and follow-up purposes.</li>
+                    <li><strong>Client Records:</strong> In accordance with applicable legal and professional obligations, which may require retention for a specified period after the conclusion of the attorney-client relationship.</li>
+                    <li><strong>Usage Data:</strong> For a limited period to analyze trends, administer our Website, and improve user experience.</li>
+                </ul>
+                <p>
+                    When personal information is no longer necessary for the purposes for which it was collected, we will securely delete or anonymize it, subject to any legal obligations to retain it.
+                </p>
+
+                <h3>8. Your Rights</h3>
+                <p>
+                    Depending on your jurisdiction and applicable data protection laws, you may have the following rights regarding your personal information:
+                </p>
+                <ul>
+                    <li><strong>Right to Access:</strong> You have the right to request access to the personal information we hold about you and obtain a copy of such information.</li>
+                    <li><strong>Right to Rectification:</strong> You have the right to request correction of inaccurate or incomplete personal information we hold about you.</li>
+                    <li><strong>Right to Erasure:</strong> You have the right to request deletion of your personal information, subject to certain exceptions.</li>
+                    <li><strong>Right to Restriction:</strong> You have the right to request restriction of processing of your personal information in certain circumstances.</li>
+                    <li><strong>Right to Data Portability:</strong> You have the right to receive your personal information in a structured, commonly used, and machine-readable format and to transmit it to another controller.</li>
+                    <li><strong>Right to Object:</strong> You have the right to object to processing of your personal information for direct marketing purposes or on grounds relating to your particular situation.</li>
+                    <li><strong>Right to Withdraw Consent:</strong> Where processing is based on your consent, you have the right to withdraw your consent at any time.</li>
+                </ul>
+                <p>
+                    To exercise any of these rights, please contact us using the contact details provided in the "Contact Us" section below. We will respond to your request in accordance with applicable law and within a reasonable timeframe.
+                </p>
+
+                <h3>9. Children's Privacy</h3>
+                <p>
+                    Our Website is not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that we have collected personal information from a child without parental consent, we will take steps to delete that information promptly. If you believe that we may have collected personal information from a child, please contact us immediately.
+                </p>
+
+                <h3>10. International Data Transfers</h3>
+                <p>
+                    Your personal information may be transferred to, stored, and processed in countries other than your country of residence. We take appropriate measures to ensure that your personal information is adequately protected and handled in accordance with applicable data protection laws, regardless of where it is transferred.
+                </p>
+
+                <h3>11. Third-Party Links</h3>
+                <p>
+                    Our Website may contain links to third-party websites. This Privacy Policy does not apply to such third-party websites. We are not responsible for the privacy practices or content of any third-party websites. We encourage you to review the privacy policies of any third-party websites you visit.
+                </p>
+
+                <h3>12. Changes to This Privacy Policy</h3>
+                <p>
+                    We reserve the right to update, modify, or amend this Privacy Policy at any time. Any changes will be posted on this page with an updated "Last Updated" date. Your continued use of our Website after any changes constitute your acceptance of the revised Privacy Policy. We encourage you to review this Privacy Policy periodically to stay informed about how we protect your privacy.
+                </p>
+
+                <h3>13. Data Protection Officer</h3>
+                <p>
+                    If you have any questions or concerns about our privacy practices, you may contact our Data Protection Officer:
+                </p>
+                <ul>
+                    <li><strong>Name:</strong> Dr. Shobha Devi Poudel</li>
+                    <li><strong>Email:</strong> <a href="mailto:namunalawassociates@outlook.com">namunalawassociates@outlook.com</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:+9779851125875">+977-985-112-5875</a></li>
+                </ul>
+
+                <h3>14. Contact Us</h3>
+                <p>
+                    If you have any questions, concerns, or comments about this Privacy Policy or our data practices, please contact us:
+                </p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:namunalawassociates@outlook.com">namunalawassociates@outlook.com</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:+9779851125875">+977-985-112-5875</a></li>
+                    <li><strong>Address:</strong> Pokhara Metropolitan City, Ward No. 7, Kaski District, Nepal</li>
+                </ul>
+                <p>
+                    We are committed to addressing any concerns you may have regarding your privacy and will respond to your inquiries promptly.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CTA SECTION - White Background
+    Schedule Consultation links to advshobhap@gmail.com
+    ============================================================ -->
+    <section class="cta-section" data-aos="fade-up">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need <span class="gold">Legal</span> Assistance?</h2>
+                <p>Schedule a confidential consultation with our experienced advocates.</p>
+                <div class="cta-buttons">
+                    <a href="mailto:advshobhap@gmail.com?subject=Schedule%20Consultation%20-%20Namuna%20Law%20Associates&body=Dear%20Team%2C%0A%0AI%20would%20like%20to%20schedule%20a%20consultation%20with%20your%20advocates.%20Please%20let%20me%20know%20your%20available%20timings.%0A%0AName%3A%0APhone%3A%0APreferred%20Date%3A%0A%0AThank%20you." class="btn btn-gold">
+                        <i class="fas fa-calendar-check"></i>
+                        Schedule Consultation
+                    </a>
+                    <a href="services.html" class="btn btn-outline-dark">
+                        <i class="fas fa-arrow-right"></i>
+                        View Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER - White Background, No Reg. No.
+    ============================================================ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Namuna <span class="gold">Law</span> Associates</h3>
+                    <p>
+                        Pokhara Metropolitan City, Ward No. 7<br />
+                        Kaski District, Nepal
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="advocate.html">Advocates</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Namuna Law Associates Private Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 700,
+            easing: 'ease-out-cubic',
+        });
+
+        // ============================================================
+        // COOKIE CONSENT MANAGER
+        // ============================================================
+        function initCookieConsent() {
+            const cookieConsent = document.getElementById('cookie-consent');
+            const acceptBtn = document.getElementById('cookie-accept');
+            const declineBtn = document.getElementById('cookie-decline');
+            const settingsBtn = document.getElementById('cookie-settings');
+
+            const cookiePreference = getCookie('cookie_consent');
+
+            if (cookiePreference === 'accepted' || cookiePreference === 'declined') {
+                cookieConsent.style.display = 'none';
+            } else {
+                setTimeout(() => {
+                    cookieConsent.style.display = 'block';
+                    cookieConsent.classList.add('show');
+                }, 1000);
+            }
+
+            acceptBtn.addEventListener('click', function() {
+                setCookie('cookie_consent', 'accepted', 365);
+                cookieConsent.style.display = 'none';
+                document.dispatchEvent(new Event('cookiesAccepted'));
+            });
+
+            declineBtn.addEventListener('click', function() {
+                setCookie('cookie_consent', 'declined', 365);
+                cookieConsent.style.display = 'none';
+            });
+
+            settingsBtn.addEventListener('click', function() {
+                window.location.href = 'cookies.html';
+            });
+        }
+
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/;SameSite=Lax';
+        }
+
+        function getCookie(name) {
+            const cookieName = name + '=';
+            const decodedCookie = decodeURIComponent(document.cookie);
+            const cookieArray = decodedCookie.split(';');
+            for (let i = 0; i < cookieArray.length; i++) {
+                let cookie = cookieArray[i].trim();
+                if (cookie.indexOf(cookieName) === 0) {
+                    return cookie.substring(cookieName.length, cookie.length);
+                }
+            }
+            return null;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            initCookieConsent();
+        });
+    </script>
+
+</body>
+</html>
