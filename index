@@ -7,33 +7,33 @@
     <!-- ============================================================
     SEO META TAGS
     ============================================================ -->
-    <title>Namuna Law Associates - Premier Legal Services in Nepal</title>
-    <meta name="title" content="Namuna Law Associates - Premier Legal Services in Nepal" />
+    <title>Namuna Law Associates - Legal Services in Nepal</title>
+    <meta name="title" content="Namuna Law Associates - Legal Services in Nepal" />
     <meta name="description" content="Namuna Law Associates provides expert legal services in Nepal. Specializing in corporate law, civil litigation, family law, property law, and constitutional law." />
     <meta name="keywords" content="law firm Nepal, legal services Pokhara, advocates Nepal, corporate law Nepal, civil litigation, family law, property law, constitutional law, Namuna Law Associates" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Namuna Law Associates Private Limited" />
     <link rel="canonical" href="https://namunalawassociates.com.np/" />
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://namunalawassociates.com.np/" />
-    <meta property="og:title" content="Namuna Law Associates - Premier Legal Services in Nepal" />
+    <meta property="og:title" content="Namuna Law Associates - Legal Services in Nepal" />
     <meta property="og:description" content="Expert legal services in Nepal. Corporate law, civil litigation, family law, property law, and constitutional law." />
     <meta property="og:image" content="https://namunalawassociates.com.np/images/og-image.jpg" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://namunalawassociates.com.np/" />
-    <meta property="twitter:title" content="Namuna Law Associates - Premier Legal Services in Nepal" />
-    <meta property="twitter:description" content="Expert legal services in Nepal. Corporate law, civil litigation, family law, property law, and constitutional law." />
+    <meta property="twitter:title" content="Namuna Law Associates - Legal Services in Nepal" />
+    <meta property="twitter:description" content="Expert legal services in Nepal." />
     <meta property="twitter:image" content="https://namunalawassociates.com.np/images/og-image.jpg" />
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -64,14 +64,14 @@
         }
 
         ::-webkit-scrollbar {
-            width: 8px;
+            width: 6px;
         }
         ::-webkit-scrollbar-track {
             background: #f0f0f0;
         }
         ::-webkit-scrollbar-thumb {
             background: #b8860b;
-            border-radius: 10px;
+            border-radius: 4px;
         }
 
         a {
@@ -97,11 +97,11 @@
             z-index: 10000;
             width: 90%;
             max-width: 900px;
-            background: #ffffff;
-            border: 1px solid rgba(184, 134, 11, 0.15);
-            border-radius: 16px;
-            padding: 20px 28px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+            background: #1a1a2e;
+            border-left: 4px solid #b8860b;
+            border-radius: 8px;
+            padding: 18px 28px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
             transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.5s ease;
             opacity: 0;
             visibility: hidden;
@@ -123,45 +123,44 @@
         .cookie-content {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 16px;
             flex-wrap: wrap;
             width: 100%;
         }
 
         .cookie-icon {
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             color: #b8860b;
             flex-shrink: 0;
         }
 
         .cookie-text {
             flex: 1;
-            min-width: 200px;
+            min-width: 180px;
         }
 
         .cookie-text h4 {
             font-family: 'Inter', sans-serif;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 600;
-            color: #1a1a2e;
-            margin-bottom: 2px;
+            color: #ffffff;
+            margin-bottom: 1px;
         }
 
         .cookie-text p {
             font-family: 'Inter', sans-serif;
-            font-size: 0.8rem;
-            color: #4a4a5a;
-            line-height: 1.6;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 1.5;
         }
 
         .cookie-text p a {
             color: #b8860b;
             font-weight: 500;
-            text-decoration: underline;
         }
 
         .cookie-text p a:hover {
-            color: #8a6a08;
+            color: #d4a017;
         }
 
         .cookie-actions {
@@ -172,10 +171,10 @@
         }
 
         .cookie-btn {
-            padding: 8px 20px;
-            border-radius: 50px;
+            padding: 6px 18px;
+            border-radius: 4px;
             font-family: 'Inter', sans-serif;
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             font-weight: 600;
             border: none;
             cursor: pointer;
@@ -190,41 +189,37 @@
 
         .cookie-btn-accept:hover {
             background: #8a6a08;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(184, 134, 11, 0.3);
         }
 
         .cookie-btn-decline {
-            background: #f5f5f5;
-            color: #666;
+            background: rgba(255, 255, 255, 0.06);
+            color: rgba(255, 255, 255, 0.5);
         }
 
         .cookie-btn-decline:hover {
-            background: #e8e8e8;
+            background: rgba(255, 255, 255, 0.1);
         }
 
         .cookie-btn-settings {
             background: transparent;
-            color: #999;
-            padding: 8px 12px;
+            color: rgba(255, 255, 255, 0.3);
+            padding: 6px 10px;
         }
 
         .cookie-btn-settings:hover {
-            color: #b8860b;
-            transform: rotate(90deg);
+            color: rgba(255, 255, 255, 0.6);
         }
 
         @media (max-width: 768px) {
             .cookie-consent {
                 bottom: 10px;
-                padding: 16px 20px;
+                padding: 14px 18px;
                 width: 95%;
-                border-radius: 12px;
             }
             .cookie-content {
                 flex-direction: column;
                 text-align: center;
-                gap: 12px;
+                gap: 10px;
             }
             .cookie-actions {
                 justify-content: center;
@@ -241,48 +236,31 @@
             position: sticky;
             top: 0;
             z-index: 999;
-            box-shadow: 0 2px 20px rgba(184, 134, 11, 0.06);
         }
 
         .header-inner {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 0;
-        }
-
-        .brand {
-            display: flex;
-            flex-direction: column;
+            padding: 14px 0;
         }
 
         .brand-name {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
             color: #1a1a2e;
             letter-spacing: 0.5px;
-            line-height: 1.1;
         }
 
         .brand-name .gold {
             color: #b8860b;
         }
 
-        .brand-tagline {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.6rem;
-            font-weight: 400;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #999;
-            margin-top: 2px;
-        }
-
         .main-nav ul {
             list-style: none;
             display: flex;
-            gap: 32px;
+            gap: 36px;
             align-items: center;
         }
 
@@ -293,7 +271,7 @@
             color: #555;
             transition: all 0.3s ease;
             position: relative;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.5px;
             padding: 4px 0;
         }
 
@@ -303,10 +281,9 @@
             bottom: -2px;
             left: 0;
             width: 0;
-            height: 3px;
+            height: 2px;
             background: #b8860b;
             transition: width 0.3s ease;
-            border-radius: 2px;
         }
 
         .main-nav ul li a:hover,
@@ -323,7 +300,7 @@
             background: #b8860b;
             color: #ffffff !important;
             padding: 8px 28px !important;
-            border-radius: 50px;
+            border-radius: 4px;
             font-weight: 600 !important;
             font-size: 0.8rem !important;
             transition: all 0.3s ease !important;
@@ -334,10 +311,9 @@
         }
 
         .nav-cta:hover {
-            background: #8a6a08 !important;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(184, 134, 11, 0.3);
+            background: #1a1a2e !important;
             color: #ffffff !important;
+            transform: none !important;
         }
 
         /* Mobile Menu */
@@ -350,7 +326,7 @@
         }
 
         .menu-toggle span {
-            width: 28px;
+            width: 26px;
             height: 2px;
             background: #1a1a2e;
             transition: all 0.3s ease;
@@ -391,7 +367,7 @@
             }
             .main-nav ul {
                 flex-direction: column;
-                gap: 18px;
+                gap: 16px;
                 align-items: stretch;
                 text-align: center;
             }
@@ -399,7 +375,7 @@
                 text-align: center;
             }
             .brand-name {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
         }
 
@@ -410,30 +386,29 @@
             width: 100%;
             padding: 0;
             position: relative;
-            overflow: hidden;
             background: #ffffff;
         }
 
         .hero-banner-image {
             width: 100%;
-            max-height: 500px;
+            max-height: 450px;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #faf8f5;
+            background: #f8f6f2;
             position: relative;
         }
 
         .hero-banner-image img {
             width: 100%;
             height: 100%;
-            max-height: 500px;
+            max-height: 450px;
             object-fit: cover;
             display: block;
         }
 
-        /* Banner Text Overlay */
+        /* Banner Overlay */
         .banner-overlay {
             position: absolute;
             inset: 0;
@@ -443,12 +418,12 @@
             justify-content: center;
             text-align: center;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.25);
+            background: rgba(0, 0, 0, 0.2);
         }
 
         .banner-overlay h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 4rem;
+            font-size: 3.8rem;
             font-weight: 700;
             color: #ffffff;
             letter-spacing: 2px;
@@ -459,67 +434,67 @@
             color: #f7d44a;
         }
 
-        .banner-overlay p {
+        .banner-overlay .sub-text {
             font-family: 'Inter', sans-serif;
-            font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.85);
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
             letter-spacing: 6px;
             text-transform: uppercase;
             margin-top: 4px;
             font-weight: 300;
-            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
         }
 
         .banner-divider {
             display: flex;
             align-items: center;
             gap: 16px;
-            margin: 12px auto;
+            margin: 10px auto;
         }
 
         .banner-divider span {
-            width: 60px;
+            width: 50px;
             height: 2px;
             background: #f7d44a;
         }
 
         .banner-divider .icon {
             color: #f7d44a;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         @media (max-width: 768px) {
             .hero-banner-image {
-                max-height: 320px;
+                max-height: 280px;
             }
             .banner-overlay h1 {
-                font-size: 2.4rem;
+                font-size: 2.2rem;
             }
-            .banner-overlay p {
-                font-size: 0.85rem;
+            .banner-overlay .sub-text {
+                font-size: 0.75rem;
                 letter-spacing: 4px;
             }
             .banner-divider span {
-                width: 40px;
+                width: 30px;
             }
         }
 
         @media (max-width: 480px) {
             .hero-banner-image {
-                max-height: 220px;
+                max-height: 200px;
             }
             .banner-overlay h1 {
                 font-size: 1.6rem;
             }
-            .banner-overlay p {
-                font-size: 0.65rem;
+            .banner-overlay .sub-text {
+                font-size: 0.6rem;
                 letter-spacing: 2px;
             }
             .banner-divider span {
-                width: 25px;
+                width: 20px;
             }
             .banner-divider .icon {
-                font-size: 0.8rem;
+                font-size: 0.7rem;
             }
         }
 
@@ -528,13 +503,12 @@
         ============================================================ */
         .nav-tabs {
             background: #ffffff;
-            border-bottom: 2px solid #b8860b;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
             padding: 0;
             display: flex;
             justify-content: center;
             gap: 0;
             flex-wrap: wrap;
-            box-shadow: 0 2px 10px rgba(184, 134, 11, 0.04);
         }
 
         .nav-tabs a {
@@ -542,7 +516,7 @@
             font-size: 0.85rem;
             font-weight: 500;
             color: #555;
-            padding: 16px 32px;
+            padding: 14px 32px;
             transition: all 0.3s ease;
             position: relative;
             letter-spacing: 0.5px;
@@ -556,10 +530,9 @@
             left: 50%;
             transform: translateX(-50%);
             width: 0;
-            height: 4px;
+            height: 3px;
             background: #b8860b;
             transition: width 0.3s ease;
-            border-radius: 4px 4px 0 0;
         }
 
         .nav-tabs a:hover,
@@ -570,15 +543,15 @@
 
         .nav-tabs a:hover::after,
         .nav-tabs a.active::after {
-            width: 70%;
+            width: 60%;
         }
 
         .nav-tabs a.nav-cta-tab {
             background: #b8860b;
             color: #ffffff !important;
-            border-radius: 50px;
+            border-radius: 4px;
             padding: 10px 32px;
-            margin: 6px 12px;
+            margin: 4px 12px;
             font-weight: 600;
             text-transform: uppercase;
             font-size: 0.8rem;
@@ -589,9 +562,7 @@
         }
 
         .nav-tabs a.nav-cta-tab:hover {
-            background: #8a6a08;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(184, 134, 11, 0.3);
+            background: #1a1a2e;
             color: #ffffff !important;
         }
 
@@ -602,19 +573,19 @@
             }
             .nav-tabs a {
                 padding: 10px 16px;
-                font-size: 0.75rem;
+                font-size: 0.7rem;
             }
             .nav-tabs a.nav-cta-tab {
                 padding: 8px 20px;
                 margin: 4px 8px;
-                font-size: 0.7rem;
+                font-size: 0.65rem;
             }
         }
 
         @media (max-width: 480px) {
             .nav-tabs a {
-                padding: 8px 12px;
-                font-size: 0.65rem;
+                padding: 8px 10px;
+                font-size: 0.6rem;
             }
         }
 
@@ -622,31 +593,31 @@
         SECTION COMMON STYLES
         ============================================================ */
         section {
-            padding: 80px 0;
+            padding: 70px 0;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 45px;
         }
 
         .section-tag {
             display: inline-block;
             font-family: 'Inter', sans-serif;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 3px;
             color: #b8860b;
-            background: rgba(184, 134, 11, 0.06);
-            padding: 6px 20px;
-            border-radius: 50px;
-            margin-bottom: 12px;
+            background: rgba(184, 134, 11, 0.04);
+            padding: 4px 16px;
+            border-radius: 2px;
+            margin-bottom: 10px;
         }
 
         .section-header h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             font-weight: 700;
             color: #1a1a2e;
             letter-spacing: 0.5px;
@@ -659,101 +630,77 @@
         .section-header p {
             font-family: 'Inter', sans-serif;
             color: #666;
-            font-size: 1.05rem;
+            font-size: 1rem;
             max-width: 550px;
-            margin: 8px auto 0;
+            margin: 6px auto 0;
         }
 
         .section-divider {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
-            margin: 16px auto 0;
+            gap: 10px;
+            margin: 14px auto 0;
         }
 
         .section-divider span {
-            width: 40px;
-            height: 3px;
-            background: #b8860b;
-            border-radius: 2px;
-        }
-
-        .section-divider span:last-child {
+            width: 30px;
+            height: 2px;
             background: #b8860b;
         }
 
         .section-divider .icon {
             color: #b8860b;
-            font-size: 0.7rem;
+            font-size: 0.6rem;
         }
 
         /* ============================================================
         FEATURES / WHY US
         ============================================================ */
         .features {
-            background: #faf8f5;
+            background: #faf9f7;
         }
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 30px;
         }
 
         .feature-card {
             background: #ffffff;
-            border: 1px solid rgba(184, 134, 11, 0.08);
-            border-radius: 16px;
-            padding: 36px 28px;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            border-radius: 8px;
+            padding: 32px 24px;
             text-align: center;
             transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
-        }
-
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: #b8860b;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-            border-radius: 0 0 2px 2px;
-        }
-
-        .feature-card:hover::before {
-            opacity: 1;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
         }
 
         .feature-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 16px 48px rgba(184, 134, 11, 0.06);
-            border-color: rgba(184, 134, 11, 0.15);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.04);
+            border-color: rgba(184, 134, 11, 0.1);
         }
 
         .feature-icon {
-            font-size: 2.6rem;
+            font-size: 2.2rem;
             display: block;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
 
         .feature-card h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             font-weight: 600;
             color: #1a1a2e;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .feature-card p {
             font-family: 'Inter', sans-serif;
             color: #666;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             line-height: 1.7;
         }
 
@@ -766,84 +713,72 @@
 
         .practice-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 24px;
         }
 
         .practice-card {
-            background: #faf8f5;
-            border: 1px solid rgba(184, 134, 11, 0.06);
-            border-radius: 14px;
-            padding: 28px 24px;
+            background: #faf9f7;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            border-radius: 8px;
+            padding: 26px 22px;
             transition: all 0.4s ease;
-            border-left: 5px solid #b8860b;
+            border-left: 4px solid #b8860b;
         }
 
         .practice-card:hover {
             background: #ffffff;
-            border-color: #b8860b;
-            transform: translateX(6px);
-            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.06);
+            border-color: rgba(184, 134, 11, 0.1);
+            transform: translateX(4px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
         }
 
         .practice-card .icon {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .practice-card h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 600;
             color: #1a1a2e;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
 
         .practice-card p {
             font-family: 'Inter', sans-serif;
             color: #666;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             line-height: 1.6;
         }
 
         /* ============================================================
-        TRUST / LEADERSHIP SECTION
+        TRUST / ABOUT SECTION
         ============================================================ */
         .trust-section {
-            background: #faf8f5;
+            background: #faf9f7;
             position: relative;
-            overflow: hidden;
-        }
-
-        .trust-section::before {
-            content: '◆';
-            position: absolute;
-            top: 10%;
-            right: 5%;
-            font-size: 12rem;
-            color: rgba(184, 134, 11, 0.03);
-            font-weight: 300;
-            pointer-events: none;
         }
 
         .trust-inner {
             display: grid;
-            grid-template-columns: 1fr 0.6fr;
-            gap: 60px;
+            grid-template-columns: 1fr 0.5fr;
+            gap: 50px;
             align-items: center;
         }
 
         .trust-text .section-tag {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .trust-text h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.6rem;
+            font-size: 2.4rem;
             font-weight: 700;
             color: #1a1a2e;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
 
         .trust-text h2 .gold {
@@ -853,9 +788,9 @@
         .trust-text p {
             font-family: 'Inter', sans-serif;
             color: #555;
-            font-size: 1rem;
+            font-size: 0.98rem;
             line-height: 1.9;
-            max-width: 540px;
+            max-width: 520px;
         }
 
         .trust-text p strong {
@@ -863,36 +798,6 @@
             font-weight: 600;
         }
 
-        .trust-signature {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-        }
-
-        .trust-signature .line {
-            width: 80px;
-            height: 3px;
-            background: #b8860b;
-            margin-bottom: 8px;
-            border-radius: 2px;
-        }
-
-        .trust-signature .name {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.2rem;
-            color: #1a1a2e;
-            font-weight: 700;
-        }
-
-        .trust-signature .title {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.8rem;
-            color: #999;
-            letter-spacing: 1px;
-        }
-
-        /* Trust Badge */
         .trust-badge {
             display: flex;
             justify-content: center;
@@ -900,8 +805,8 @@
         }
 
         .badge-circle {
-            width: 170px;
-            height: 170px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             border: 3px solid #b8860b;
             display: flex;
@@ -909,30 +814,19 @@
             align-items: center;
             justify-content: center;
             background: #ffffff;
-            position: relative;
-            box-shadow: 0 8px 40px rgba(184, 134, 11, 0.06);
-        }
-
-        .badge-circle::before {
-            content: '';
-            position: absolute;
-            inset: -10px;
-            border-radius: 50%;
-            border: 1px solid rgba(184, 134, 11, 0.08);
+            box-shadow: 0 8px 40px rgba(184, 134, 11, 0.04);
         }
 
         .badge-circle .label {
             font-family: 'Inter', sans-serif;
-            font-size: 0.6rem;
+            font-size: 0.55rem;
             text-transform: uppercase;
             letter-spacing: 3px;
             color: #bbb;
         }
 
-        .badge-circle .year {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.2rem;
-            font-weight: 700;
+        .badge-circle .icon-big {
+            font-size: 2.8rem;
             color: #b8860b;
             line-height: 1;
             margin-top: 2px;
@@ -940,34 +834,28 @@
 
         .badge-circle .sub {
             font-family: 'Inter', sans-serif;
-            font-size: 0.55rem;
+            font-size: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 2px;
             color: #ccc;
-            margin-top: 4px;
+            margin-top: 2px;
         }
 
         @media (max-width: 768px) {
             .trust-inner {
                 grid-template-columns: 1fr;
                 text-align: center;
-                gap: 40px;
+                gap: 35px;
             }
             .trust-text p {
                 max-width: 100%;
             }
-            .trust-signature {
-                align-items: center;
-            }
-            .trust-signature .line {
-                margin: 0 auto 8px;
-            }
             .badge-circle {
-                width: 140px;
-                height: 140px;
+                width: 130px;
+                height: 130px;
             }
-            .badge-circle .year {
-                font-size: 2.8rem;
+            .badge-circle .icon-big {
+                font-size: 2.2rem;
             }
         }
 
@@ -975,36 +863,34 @@
         CTA SECTION
         ============================================================ */
         .cta-section {
-            background: #faf8f5;
+            background: #1a1a2e;
             text-align: center;
-            padding: 70px 0;
-            border-top: 2px solid #b8860b;
-            border-bottom: 2px solid #b8860b;
+            padding: 60px 0;
         }
 
         .cta-content h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.6rem;
+            font-size: 2.4rem;
             font-weight: 700;
-            color: #1a1a2e;
-            margin-bottom: 12px;
+            color: #ffffff;
+            margin-bottom: 10px;
         }
 
         .cta-content h2 .gold {
-            color: #b8860b;
+            color: #f7d44a;
         }
 
         .cta-content p {
             font-family: 'Inter', sans-serif;
-            color: #666;
-            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 1rem;
             max-width: 500px;
-            margin: 0 auto 32px;
+            margin: 0 auto 28px;
         }
 
         .cta-buttons {
             display: flex;
-            gap: 16px;
+            gap: 14px;
             justify-content: center;
             flex-wrap: wrap;
         }
@@ -1013,12 +899,12 @@
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            padding: 14px 34px;
-            border-radius: 50px;
+            padding: 12px 32px;
+            border-radius: 4px;
             font-family: 'Inter', sans-serif;
             font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.4s ease;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
             border: none;
             cursor: pointer;
             letter-spacing: 0.5px;
@@ -1027,27 +913,22 @@
         .btn-gold {
             background: #b8860b;
             color: #ffffff;
-            box-shadow: 0 4px 30px rgba(184, 134, 11, 0.25);
         }
 
         .btn-gold:hover {
             background: #8a6a08;
-            transform: translateY(-4px);
-            box-shadow: 0 12px 50px rgba(184, 134, 11, 0.35);
             color: #ffffff;
         }
 
-        .btn-outline-dark {
+        .btn-outline-light {
             background: transparent;
-            color: #1a1a2e;
-            border: 2px solid #b8860b;
+            color: #ffffff;
+            border: 2px solid rgba(255, 255, 255, 0.1);
         }
 
-        .btn-outline-dark:hover {
-            background: #b8860b;
-            color: #ffffff;
-            transform: translateY(-4px);
-            box-shadow: 0 8px 30px rgba(184, 134, 11, 0.15);
+        .btn-outline-light:hover {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
         @media (max-width: 480px) {
@@ -1060,7 +941,7 @@
             }
             .btn {
                 width: 100%;
-                max-width: 280px;
+                max-width: 260px;
                 justify-content: center;
             }
         }
@@ -1070,62 +951,53 @@
         ============================================================ */
         .site-footer {
             background: #1a1a2e;
-            padding: 60px 0 24px;
+            padding: 50px 0 24px;
             border-top: 3px solid #b8860b;
         }
 
         .footer-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
-            gap: 50px;
-            margin-bottom: 40px;
+            gap: 40px;
+            margin-bottom: 35px;
         }
 
         .footer-brand h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-weight: 700;
             color: #ffffff;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
 
         .footer-brand h3 .gold {
             color: #f7d44a;
         }
 
-        .footer-brand .tagline {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.7rem;
-            color: rgba(255, 255, 255, 0.3);
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-        }
-
         .footer-brand p {
             font-family: 'Inter', sans-serif;
-            color: rgba(255, 255, 255, 0.4);
-            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.88rem;
             line-height: 1.8;
-            max-width: 320px;
+            max-width: 300px;
         }
 
         .footer-brand .reg {
-            font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.2);
-            margin-top: 6px;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.15);
+            margin-top: 4px;
         }
 
         .footer-links h4 {
             font-family: 'Inter', sans-serif;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: rgba(255, 255, 255, 0.4);
-            margin-bottom: 16px;
+            color: rgba(255, 255, 255, 0.3);
+            margin-bottom: 14px;
             border-bottom: 2px solid #b8860b;
-            padding-bottom: 10px;
+            padding-bottom: 8px;
             display: inline-block;
         }
 
@@ -1133,13 +1005,13 @@
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 8px;
         }
 
         .footer-links ul li a {
             font-family: 'Inter', sans-serif;
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.25);
             transition: color 0.3s ease;
         }
 
@@ -1149,21 +1021,21 @@
 
         .footer-bottom {
             text-align: center;
-            padding-top: 24px;
+            padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.04);
         }
 
         .footer-bottom p {
             font-family: 'Inter', sans-serif;
-            font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.15);
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.12);
             letter-spacing: 0.5px;
         }
 
         @media (max-width: 768px) {
             .footer-grid {
                 grid-template-columns: 1fr;
-                gap: 30px;
+                gap: 25px;
                 text-align: center;
             }
             .footer-brand p {
@@ -1174,22 +1046,22 @@
                 text-align: center;
             }
             section {
-                padding: 60px 0;
+                padding: 50px 0;
             }
             .section-header h2 {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
         }
 
         @media (max-width: 480px) {
             .section-header h2 {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
             .container {
                 padding: 0 16px;
             }
             .footer-brand h3 {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -1205,11 +1077,11 @@
             <div class="cookie-content">
                 <div class="cookie-icon"><i class="fas fa-cookie-bite"></i></div>
                 <div class="cookie-text">
-                    <h4>We Value Your Privacy</h4>
-                    <p>We use cookies to enhance your browsing experience. By clicking "Accept All", you consent to our use of cookies. <a href="cookies.html">Learn More</a></p>
+                    <h4>Privacy Notice</h4>
+                    <p>We use cookies to enhance your experience. By clicking "Accept All", you consent to our use of cookies. <a href="cookies.html">Learn More</a></p>
                 </div>
                 <div class="cookie-actions">
-                    <button id="cookie-accept" class="cookie-btn cookie-btn-accept"><i class="fas fa-check"></i> Accept All</button>
+                    <button id="cookie-accept" class="cookie-btn cookie-btn-accept"><i class="fas fa-check"></i> Accept</button>
                     <button id="cookie-decline" class="cookie-btn cookie-btn-decline">Decline</button>
                     <button id="cookie-settings" class="cookie-btn cookie-btn-settings"><i class="fas fa-cog"></i></button>
                 </div>
@@ -1223,10 +1095,7 @@
     <header class="site-header" id="header">
         <div class="container">
             <div class="header-inner">
-                <div class="brand">
-                    <span class="brand-name">Namuna <span class="gold">Law</span> Associates</span>
-                    <span class="brand-tagline">Legal Excellence Since 2026</span>
-                </div>
+                <div class="brand-name">Namuna <span class="gold">Law</span> Associates</div>
                 <nav class="main-nav" id="mainNav">
                     <ul>
                         <li><a href="index.html" class="active">Home</a></li>
@@ -1248,15 +1117,15 @@
     ============================================================ -->
     <section class="hero-banner">
         <div class="hero-banner-image">
-            <img src="images/nla.png" alt="Namuna Law Associates - Legal Services in Nepal" />
+            <img src="images/nla.png" alt="Namuna Law Associates" />
             <div class="banner-overlay">
                 <h1>Namuna <span class="gold">Law</span> Associates</h1>
-                <p>Legal Excellence Since 2026</p>
                 <div class="banner-divider">
                     <span></span>
                     <span class="icon">⚖️</span>
                     <span></span>
                 </div>
+                <span class="sub-text">Legal Excellence</span>
             </div>
         </div>
     </section>
@@ -1291,22 +1160,22 @@
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                     <span class="feature-icon">⚖️</span>
                     <h3>Expert Advocacy</h3>
-                    <p>Seasoned advocates with deep knowledge of Nepali law, led by distinguished legal professionals.</p>
+                    <p>Seasoned advocates with deep knowledge of Nepali law and legal procedure.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                     <span class="feature-icon">📚</span>
                     <h3>Legal Research</h3>
-                    <p>Comprehensive social science &amp; humanities research for informed legal strategies.</p>
+                    <p>Comprehensive research and analysis for informed legal strategies.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
                     <span class="feature-icon">🤝</span>
                     <h3>Client-Centric</h3>
-                    <p>Personalized legal solutions tailored to your unique situation with compassion and understanding.</p>
+                    <p>Personalized legal solutions tailored to your unique situation.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
                     <span class="feature-icon">📄</span>
-                    <h3>Full-Service Firm</h3>
-                    <p>From documentation to litigation, we handle all your legal needs under one roof.</p>
+                    <h3>Full-Service</h3>
+                    <p>From documentation to litigation, we handle all your legal needs.</p>
                 </div>
             </div>
         </div>
@@ -1356,20 +1225,20 @@
                 <div class="practice-card" data-aos="fade-up" data-aos-delay="350">
                     <span class="icon">📊</span>
                     <h3>Legal Research</h3>
-                    <p>In-depth research, social science analysis, and expert legal opinions.</p>
+                    <p>In-depth research, analysis, and expert legal opinions.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ============================================================
-    TRUST / LEADERSHIP SECTION
+    TRUST / ABOUT SECTION
     ============================================================ -->
     <section class="trust-section" data-aos="fade-up">
         <div class="container">
             <div class="trust-inner">
                 <div class="trust-text">
-                    <span class="section-tag">Our Commitment</span>
+                    <span class="section-tag">About Us</span>
                     <h2>Justice. Integrity. <span class="gold">Excellence.</span></h2>
                     <p>
                         At Namuna Law Associates, we are committed to upholding the highest
@@ -1378,16 +1247,11 @@
                         <strong>Dr. Shobha Devi Poudel</strong>, is dedicated to protecting
                         your rights and interests with integrity and professionalism.
                     </p>
-                    <div class="trust-signature">
-                        <span class="line"></span>
-                        <span class="name">Namuna Law Associates</span>
-                        <span class="title">Legal Excellence Since 2026</span>
-                    </div>
                 </div>
                 <div class="trust-badge">
                     <div class="badge-circle">
                         <span class="label">Trusted</span>
-                        <span class="year">⚖️</span>
+                        <span class="icon-big">⚖️</span>
                         <span class="sub">Excellence</span>
                     </div>
                 </div>
@@ -1402,15 +1266,15 @@
         <div class="container">
             <div class="cta-content">
                 <h2>Need <span class="gold">Legal</span> Assistance?</h2>
-                <p>Contact us today for a confidential consultation with our experienced advocates.</p>
+                <p>Contact us today for a confidential consultation.</p>
                 <div class="cta-buttons">
                     <a href="contact.html" class="btn btn-gold">
                         <i class="fas fa-calendar-check"></i>
                         Schedule Consultation
                     </a>
-                    <a href="services.html" class="btn btn-outline-dark">
+                    <a href="services.html" class="btn btn-outline-light">
                         <i class="fas fa-arrow-right"></i>
-                        View All Services
+                        View Services
                     </a>
                 </div>
             </div>
@@ -1425,7 +1289,6 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>Namuna <span class="gold">Law</span> Associates</h3>
-                    <p class="tagline">Legal Excellence Since 2026</p>
                     <p>
                         Pokhara Metropolitan City, Ward No. 7<br />
                         Kaski District, Nepal
@@ -1464,8 +1327,8 @@
         // Initialize AOS
         AOS.init({
             once: true,
-            offset: 60,
-            duration: 800,
+            offset: 50,
+            duration: 700,
             easing: 'ease-out-cubic',
         });
 
@@ -1485,16 +1348,6 @@
             });
         });
 
-        // Header scroll effect
-        const header = document.getElementById('header');
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 50) {
-                header.style.boxShadow = '0 4px 30px rgba(184, 134, 11, 0.08)';
-            } else {
-                header.style.boxShadow = '0 2px 20px rgba(184, 134, 11, 0.04)';
-            }
-        });
-
         // ============================================================
         // COOKIE CONSENT MANAGER
         // ============================================================
@@ -1506,9 +1359,7 @@
 
             const cookiePreference = getCookie('cookie_consent');
 
-            if (cookiePreference === 'accepted') {
-                cookieConsent.style.display = 'none';
-            } else if (cookiePreference === 'declined') {
+            if (cookiePreference === 'accepted' || cookiePreference === 'declined') {
                 cookieConsent.style.display = 'none';
             } else {
                 setTimeout(() => {
