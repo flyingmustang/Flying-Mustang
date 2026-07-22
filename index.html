@@ -43,7 +43,9 @@
 
     <style>
         /* ============================================================
-        CSS RESET & BASE
+        CSS RESET & BASE - Law Colors Only
+        Colors: Deep Navy (#1a1a2e), Gold (#b8860b), 
+                Charcoal (#f5f3f0), White (#ffffff)
         ============================================================ */
         * {
             margin: 0;
@@ -60,14 +62,14 @@
             background: #ffffff;
             color: #1a1a2e;
             overflow-x: hidden;
-            line-height: 1.7;
+            line-height: 1.8;
         }
 
         ::-webkit-scrollbar {
             width: 6px;
         }
         ::-webkit-scrollbar-track {
-            background: #f0f0f0;
+            background: #f0eee8;
         }
         ::-webkit-scrollbar-thumb {
             background: #b8860b;
@@ -228,9 +230,7 @@
 
         /* ============================================================
         HEADER BANNER IMAGE - TOP CENTER
-        Aspect Ratio: 10 / 3
-        Image Width: 500px
-        Image Height: 150px
+        Aspect Ratio: 10:3 | Width: 500px | Height: 150px
         ============================================================ */
         .header-banner {
             width: 100%;
@@ -248,7 +248,7 @@
             aspect-ratio: 10 / 3;
             object-fit: contain;
             display: block;
-            background: #faf9f7;
+            background: #f5f3f0;
         }
 
         @media (max-width: 600px) {
@@ -259,6 +259,7 @@
 
         /* ============================================================
         NAVIGATION TABS (Below Banner Image)
+        All tabs including Contact styled the same
         ============================================================ */
         .nav-tabs {
             background: #ffffff;
@@ -307,24 +308,9 @@
             width: 70%;
         }
 
-        .nav-tabs a.nav-cta-tab {
-            background: #b8860b;
-            color: #ffffff !important;
-            border-radius: 4px;
-            padding: 10px 32px;
-            margin: 4px 12px;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-        }
-
-        .nav-tabs a.nav-cta-tab::after {
-            display: none;
-        }
-
-        .nav-tabs a.nav-cta-tab:hover {
-            background: #1a1a2e;
-            color: #ffffff !important;
+        /* All nav tabs including Contact have the same style */
+        .nav-tabs a.nav-contact {
+            /* Same as other tabs - no special styling */
         }
 
         @media (max-width: 768px) {
@@ -335,11 +321,6 @@
             .nav-tabs a {
                 padding: 10px 16px;
                 font-size: 0.7rem;
-            }
-            .nav-tabs a.nav-cta-tab {
-                padding: 8px 20px;
-                margin: 4px 8px;
-                font-size: 0.65rem;
             }
         }
 
@@ -392,7 +373,7 @@
             font-family: 'Inter', sans-serif;
             color: #666;
             font-size: 1rem;
-            max-width: 550px;
+            max-width: 650px;
             margin: 6px auto 0;
         }
 
@@ -416,15 +397,15 @@
         }
 
         /* ============================================================
-        FEATURES / WHY US
+        FEATURES / WHY US - Paragraph Content
         ============================================================ */
         .features {
-            background: #faf9f7;
+            background: #f5f3f0;
         }
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 30px;
         }
 
@@ -460,13 +441,13 @@
 
         .feature-card p {
             font-family: 'Inter', sans-serif;
-            color: #666;
+            color: #555;
             font-size: 0.88rem;
-            line-height: 1.7;
+            line-height: 1.8;
         }
 
         /* ============================================================
-        PRACTICE AREAS
+        PRACTICE AREAS - Paragraph Content
         ============================================================ */
         .practice-areas {
             background: #ffffff;
@@ -474,15 +455,15 @@
 
         .practice-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
         }
 
         .practice-card {
-            background: #faf9f7;
+            background: #f5f3f0;
             border: 1px solid rgba(0, 0, 0, 0.04);
             border-radius: 8px;
-            padding: 26px 22px;
+            padding: 28px 24px;
             transition: all 0.4s ease;
             border-left: 4px solid #b8860b;
         }
@@ -510,24 +491,27 @@
 
         .practice-card p {
             font-family: 'Inter', sans-serif;
-            color: #666;
+            color: #555;
             font-size: 0.85rem;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         /* ============================================================
-        TRUST / ABOUT SECTION
+        ABOUT / TRUST SECTION - Without Circle Badge
         ============================================================ */
         .trust-section {
-            background: #faf9f7;
+            background: #f5f3f0;
             position: relative;
         }
 
         .trust-inner {
             display: grid;
-            grid-template-columns: 1fr 0.5fr;
-            gap: 50px;
+            grid-template-columns: 1fr;
+            gap: 0;
             align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
         }
 
         .trust-text .section-tag {
@@ -551,7 +535,8 @@
             color: #555;
             font-size: 0.98rem;
             line-height: 1.9;
-            max-width: 520px;
+            max-width: 700px;
+            margin: 0 auto;
         }
 
         .trust-text p strong {
@@ -559,91 +544,32 @@
             font-weight: 600;
         }
 
-        .trust-badge {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .badge-circle {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #b8860b;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: #ffffff;
-            box-shadow: 0 8px 40px rgba(184, 134, 11, 0.04);
-        }
-
-        .badge-circle .label {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.55rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: #bbb;
-        }
-
-        .badge-circle .icon-big {
-            font-size: 2.8rem;
-            color: #b8860b;
-            line-height: 1;
-            margin-top: 2px;
-        }
-
-        .badge-circle .sub {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #ccc;
-            margin-top: 2px;
-        }
-
-        @media (max-width: 768px) {
-            .trust-inner {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 35px;
-            }
-            .trust-text p {
-                max-width: 100%;
-            }
-            .badge-circle {
-                width: 130px;
-                height: 130px;
-            }
-            .badge-circle .icon-big {
-                font-size: 2.2rem;
-            }
-        }
-
         /* ============================================================
-        CTA SECTION
+        CTA SECTION - White Background
         ============================================================ */
         .cta-section {
-            background: #1a1a2e;
+            background: #ffffff;
             text-align: center;
             padding: 60px 0;
+            border-top: 2px solid #b8860b;
+            border-bottom: 2px solid #b8860b;
         }
 
         .cta-content h2 {
             font-family: 'Playfair Display', serif;
             font-size: 2.4rem;
             font-weight: 700;
-            color: #ffffff;
+            color: #1a1a2e;
             margin-bottom: 10px;
         }
 
         .cta-content h2 .gold {
-            color: #f7d44a;
+            color: #b8860b;
         }
 
         .cta-content p {
             font-family: 'Inter', sans-serif;
-            color: rgba(255, 255, 255, 0.4);
+            color: #666;
             font-size: 1rem;
             max-width: 500px;
             margin: 0 auto 28px;
@@ -681,15 +607,15 @@
             color: #ffffff;
         }
 
-        .btn-outline-light {
+        .btn-outline-dark {
             background: transparent;
-            color: #ffffff;
-            border: 2px solid rgba(255, 255, 255, 0.1);
+            color: #1a1a2e;
+            border: 2px solid #b8860b;
         }
 
-        .btn-outline-light:hover {
-            background: rgba(255, 255, 255, 0.04);
-            border-color: rgba(255, 255, 255, 0.2);
+        .btn-outline-dark:hover {
+            background: #b8860b;
+            color: #ffffff;
         }
 
         @media (max-width: 480px) {
@@ -708,10 +634,10 @@
         }
 
         /* ============================================================
-        FOOTER
+        FOOTER - White Background, No Reg. No.
         ============================================================ */
         .site-footer {
-            background: #1a1a2e;
+            background: #ffffff;
             padding: 50px 0 24px;
             border-top: 3px solid #b8860b;
         }
@@ -727,26 +653,20 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.4rem;
             font-weight: 700;
-            color: #ffffff;
+            color: #1a1a2e;
             margin-bottom: 2px;
         }
 
         .footer-brand h3 .gold {
-            color: #f7d44a;
+            color: #b8860b;
         }
 
         .footer-brand p {
             font-family: 'Inter', sans-serif;
-            color: rgba(255, 255, 255, 0.3);
+            color: #666;
             font-size: 0.88rem;
             line-height: 1.8;
             max-width: 300px;
-        }
-
-        .footer-brand .reg {
-            font-size: 0.7rem;
-            color: rgba(255, 255, 255, 0.15);
-            margin-top: 4px;
         }
 
         .footer-links h4 {
@@ -755,7 +675,7 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: rgba(255, 255, 255, 0.3);
+            color: #1a1a2e;
             margin-bottom: 14px;
             border-bottom: 2px solid #b8860b;
             padding-bottom: 8px;
@@ -772,24 +692,24 @@
         .footer-links ul li a {
             font-family: 'Inter', sans-serif;
             font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.25);
+            color: #777;
             transition: color 0.3s ease;
         }
 
         .footer-links ul li a:hover {
-            color: #f7d44a;
+            color: #b8860b;
         }
 
         .footer-bottom {
             text-align: center;
             padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
         }
 
         .footer-bottom p {
             font-family: 'Inter', sans-serif;
             font-size: 0.7rem;
-            color: rgba(255, 255, 255, 0.12);
+            color: #999;
             letter-spacing: 0.5px;
         }
 
@@ -812,6 +732,9 @@
             .section-header h2 {
                 font-size: 2rem;
             }
+            .trust-inner {
+                padding: 0 16px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -823,6 +746,9 @@
             }
             .footer-brand h3 {
                 font-size: 1.2rem;
+            }
+            .cta-content h2 {
+                font-size: 1.6rem;
             }
         }
     </style>
@@ -860,24 +786,25 @@
 
     <!-- ============================================================
     NAVIGATION TABS (Below Banner Image)
+    All tabs including Contact styled the same
     ============================================================ -->
     <div class="nav-tabs">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="advocate.html">Advocates</a>
         <a href="services.html">Services</a>
-        <a href="contact.html" class="nav-cta-tab"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="contact.html">Contact</a>
     </div>
 
     <!-- ============================================================
-    FEATURES / WHY US
+    FEATURES / WHY US - Paragraph Content
     ============================================================ -->
     <section class="features" data-aos="fade-up">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Why Choose Us</span>
                 <h2>Excellence in <span class="gold">Legal Practice</span></h2>
-                <p>We combine deep legal expertise with a commitment to justice and client satisfaction.</p>
+                <p>We combine deep legal expertise with a steadfast commitment to justice and client satisfaction.</p>
                 <div class="section-divider">
                     <span></span>
                     <span class="icon">◆</span>
@@ -888,36 +815,36 @@
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                     <span class="feature-icon">⚖️</span>
                     <h3>Expert Advocacy</h3>
-                    <p>Seasoned advocates with deep knowledge of Nepali law and legal procedure.</p>
+                    <p>Our firm is led by seasoned advocates with profound knowledge of Nepali law and legal procedure. We bring decades of courtroom experience and strategic insight to every case we handle.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                     <span class="feature-icon">📚</span>
                     <h3>Legal Research</h3>
-                    <p>Comprehensive research and analysis for informed legal strategies.</p>
+                    <p>We conduct comprehensive legal research and analysis to develop informed, evidence-based strategies. Our commitment to thorough preparation ensures that every client receives the strongest possible representation.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
                     <span class="feature-icon">🤝</span>
-                    <h3>Client-Centric</h3>
-                    <p>Personalized legal solutions tailored to your unique situation.</p>
+                    <h3>Client-Centric Approach</h3>
+                    <p>We understand that every legal matter is unique. Our personalized approach ensures that each client receives tailored solutions that address their specific needs and circumstances with compassion and understanding.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
                     <span class="feature-icon">📄</span>
-                    <h3>Full-Service</h3>
-                    <p>From documentation to litigation, we handle all your legal needs.</p>
+                    <h3>Full-Service Firm</h3>
+                    <p>From document preparation and legal drafting to complex litigation and court representation, we provide comprehensive legal services under one roof. Our clients benefit from seamless, integrated legal support.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ============================================================
-    PRACTICE AREAS
+    PRACTICE AREAS - Paragraph Content
     ============================================================ -->
     <section class="practice-areas" data-aos="fade-up">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Our Expertise</span>
                 <h2>Practice <span class="gold">Areas</span></h2>
-                <p>Comprehensive legal services across multiple domains.</p>
+                <p>We offer comprehensive legal services across multiple domains to meet the diverse needs of our clients.</p>
                 <div class="section-divider">
                     <span></span>
                     <span class="icon">◆</span>
@@ -927,40 +854,40 @@
             <div class="practice-grid">
                 <div class="practice-card" data-aos="fade-up" data-aos-delay="100">
                     <span class="icon">🏛️</span>
-                    <h3>Corporate &amp; Commercial</h3>
-                    <p>Company registration, contracts, M&amp;A, and regulatory compliance.</p>
+                    <h3>Corporate &amp; Commercial Law</h3>
+                    <p>We provide expert guidance on company formation, partnership deeds, shareholder agreements, merger and acquisition advisory, corporate compliance, and regulatory filings under the Companies Act, 2006.</p>
                 </div>
                 <div class="practice-card" data-aos="fade-up" data-aos-delay="150">
                     <span class="icon">⚖️</span>
                     <h3>Civil &amp; Criminal Litigation</h3>
-                    <p>Representation in all levels of Nepali courts with strategic advocacy.</p>
+                    <p>Our advocates represent clients in civil disputes including contracts, property, torts, and debt recovery, as well as criminal proceedings, bail applications, and defense throughout the justice process.</p>
                 </div>
                 <div class="practice-card" data-aos="fade-up" data-aos-delay="200">
                     <span class="icon">🏠</span>
-                    <h3>Property &amp; Land</h3>
-                    <p>Land title disputes, due diligence, registration, and acquisition.</p>
+                    <h3>Property &amp; Land Law</h3>
+                    <p>We assist with land title due diligence, property registration, dispute resolution, and land acquisition advisory. Our expertise ensures that property transactions are conducted with legal certainty and security.</p>
                 </div>
                 <div class="practice-card" data-aos="fade-up" data-aos-delay="250">
                     <span class="icon">👨‍👩‍👧‍👦</span>
-                    <h3>Family &amp; Inheritance</h3>
-                    <p>Matrimonial matters, succession planning, wills, and estate administration.</p>
+                    <h3>Family &amp; Inheritance Law</h3>
+                    <p>We handle matrimonial matters, divorce proceedings, child custody disputes, succession planning, wills, and estate administration with sensitivity and professionalism.</p>
                 </div>
                 <div class="practice-card" data-aos="fade-up" data-aos-delay="300">
                     <span class="icon">🔒</span>
                     <h3>Constitutional Law</h3>
-                    <p>Expertise in constitutional matters and fundamental rights protection.</p>
+                    <p>Our team possesses deep expertise in constitutional matters, fundamental rights protection, and public interest litigation, ensuring that the principles of justice and equality are upheld.</p>
                 </div>
                 <div class="practice-card" data-aos="fade-up" data-aos-delay="350">
                     <span class="icon">📊</span>
-                    <h3>Legal Research</h3>
-                    <p>In-depth research, analysis, and expert legal opinions.</p>
+                    <h3>Legal Research &amp; Advisory</h3>
+                    <p>We provide in-depth legal research, social science analysis, and expert opinions for individuals, businesses, and government agencies, supporting informed decision-making and policy development.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ============================================================
-    TRUST / ABOUT SECTION
+    ABOUT / TRUST SECTION - Without Circle Badge
     ============================================================ -->
     <section class="trust-section" data-aos="fade-up">
         <div class="container">
@@ -969,38 +896,28 @@
                     <span class="section-tag">About Us</span>
                     <h2>Justice. Integrity. <span class="gold">Excellence.</span></h2>
                     <p>
-                        At Namuna Law Associates, we are committed to upholding the highest
-                        standards of legal practice. Our team of experienced advocates,
-                        led by <strong>Prof. Dr. Gyaneshwer Parajuli</strong> and
-                        <strong>Dr. Shobha Devi Poudel</strong>, is dedicated to protecting
-                        your rights and interests with integrity and professionalism.
+                        At Namuna Law Associates, we are unwavering in our commitment to upholding the highest standards of legal practice. Our team of experienced advocates, led by <strong>Prof. Dr. Gyaneshwer Parajuli</strong> and <strong>Dr. Shobha Devi Poudel</strong>, is dedicated to protecting your rights and interests with integrity and professionalism. We believe that access to quality legal representation is a fundamental right, and we strive to make justice accessible to all who seek our assistance.
                     </p>
-                </div>
-                <div class="trust-badge">
-                    <div class="badge-circle">
-                        <span class="label">Trusted</span>
-                        <span class="icon-big">⚖️</span>
-                        <span class="sub">Excellence</span>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ============================================================
-    CTA SECTION
+    CTA SECTION - White Background
+    Schedule Consultation links to advshobhap@gmail.com
     ============================================================ -->
     <section class="cta-section" data-aos="fade-up">
         <div class="container">
             <div class="cta-content">
                 <h2>Need <span class="gold">Legal</span> Assistance?</h2>
-                <p>Contact us today for a confidential consultation.</p>
+                <p>Contact us today for a confidential consultation with our experienced advocates.</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-gold">
+                    <a href="mailto:advshobhap@gmail.com?subject=Schedule%20Consultation%20-%20Namuna%20Law%20Associates&body=Dear%20Team%2C%0A%0AI%20would%20like%20to%20schedule%20a%20consultation%20with%20your%20advocates.%20Please%20let%20me%20know%20your%20available%20timings.%0A%0AName%3A%0APhone%3A%0APreferred%20Date%3A%0A%0AThank%20you." class="btn btn-gold">
                         <i class="fas fa-calendar-check"></i>
                         Schedule Consultation
                     </a>
-                    <a href="services.html" class="btn btn-outline-light">
+                    <a href="services.html" class="btn btn-outline-dark">
                         <i class="fas fa-arrow-right"></i>
                         View Services
                     </a>
@@ -1010,7 +927,7 @@
     </section>
 
     <!-- ============================================================
-    FOOTER
+    FOOTER - White Background, No Reg. No.
     ============================================================ -->
     <footer class="site-footer">
         <div class="container">
@@ -1021,7 +938,6 @@
                         Pokhara Metropolitan City, Ward No. 7<br />
                         Kaski District, Nepal
                     </p>
-                    <p class="reg">Reg. No: 392547/82/83</p>
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
