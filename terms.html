@@ -29,8 +29,14 @@
     <meta property="twitter:description" content="Read the Terms of Use for Namuna Law Associates website." />
     <meta property="twitter:image" content="https://namunalawassociates.com.np/images/og-image.jpg" />
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!-- ============================================================
+    FAVICON
+    ============================================================ -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="images/favicon-512x512.png" />
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -390,6 +396,7 @@
             font-size: 0.98rem;
             line-height: 1.9;
             margin-bottom: 14px;
+            text-align: justify;
         }
 
         .legal-content ul {
@@ -439,6 +446,7 @@
             }
             .legal-content p {
                 font-size: 0.92rem;
+                text-align: left;
             }
         }
 
@@ -897,65 +905,4 @@
             easing: 'ease-out-cubic',
         });
 
-        // ============================================================
-        // COOKIE CONSENT MANAGER
-        // ============================================================
-        function initCookieConsent() {
-            const cookieConsent = document.getElementById('cookie-consent');
-            const acceptBtn = document.getElementById('cookie-accept');
-            const declineBtn = document.getElementById('cookie-decline');
-            const settingsBtn = document.getElementById('cookie-settings');
-
-            const cookiePreference = getCookie('cookie_consent');
-
-            if (cookiePreference === 'accepted' || cookiePreference === 'declined') {
-                cookieConsent.style.display = 'none';
-            } else {
-                setTimeout(() => {
-                    cookieConsent.style.display = 'block';
-                    cookieConsent.classList.add('show');
-                }, 1000);
-            }
-
-            acceptBtn.addEventListener('click', function() {
-                setCookie('cookie_consent', 'accepted', 365);
-                cookieConsent.style.display = 'none';
-                document.dispatchEvent(new Event('cookiesAccepted'));
-            });
-
-            declineBtn.addEventListener('click', function() {
-                setCookie('cookie_consent', 'declined', 365);
-                cookieConsent.style.display = 'none';
-            });
-
-            settingsBtn.addEventListener('click', function() {
-                window.location.href = 'cookies.html';
-            });
-        }
-
-        function setCookie(name, value, days) {
-            const date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/;SameSite=Lax';
-        }
-
-        function getCookie(name) {
-            const cookieName = name + '=';
-            const decodedCookie = decodeURIComponent(document.cookie);
-            const cookieArray = decodedCookie.split(';');
-            for (let i = 0; i < cookieArray.length; i++) {
-                let cookie = cookieArray[i].trim();
-                if (cookie.indexOf(cookieName) === 0) {
-                    return cookie.substring(cookieName.length, cookie.length);
-                }
-            }
-            return null;
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            initCookieConsent();
-        });
-    </script>
-
-</body>
-</html>
+        // =================================
