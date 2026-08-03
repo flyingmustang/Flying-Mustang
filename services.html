@@ -237,7 +237,7 @@
         }
 
         /* ============================================================
-        HEADER BANNER IMAGE - TOP CENTER
+        HEADER BANNER IMAGE - TOP CENTER (330px, Clickable)
         ============================================================ */
         .header-banner {
             width: 100%;
@@ -248,9 +248,16 @@
             align-items: center;
         }
 
+        .header-banner a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 0;
+        }
+
         .header-banner img {
             width: 100%;
-            max-width: 360px;
+            max-width: 330px;
             height: auto;
             aspect-ratio: 10 / 3;
             object-fit: contain;
@@ -638,10 +645,12 @@
     </div>
 
     <!-- ============================================================
-    HEADER BANNER IMAGE - TOP CENTER
+    HEADER BANNER IMAGE - TOP CENTER (Clickable to Homepage)
     ============================================================ -->
     <div class="header-banner">
-        <img src="images/nla.png" alt="Namuna Law Associates - Your trusted legal partner in Pokhara, Nepal" width="500" height="150" loading="eager" />
+        <a href="index.html" aria-label="Namuna Law Associates - Home">
+            <img src="images/nla.png" alt="Namuna Law Associates - Your trusted legal partner in Pokhara, Nepal" width="500" height="150" loading="eager" />
+        </a>
     </div>
 
     <!-- ============================================================
