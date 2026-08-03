@@ -12,7 +12,7 @@
     <meta name="description" content="Namuna Law Associates provides expert legal services in Nepal. Specializing in corporate law, civil litigation, family law, property law, and constitutional law." />
     <meta name="keywords" content="law firm Nepal, legal services Pokhara, advocates Nepal, corporate law Nepal, civil litigation, family law, property law, constitutional law, Namuna Law Associates" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="Namuna Law Associates Private Limited" />
+    <meta name="author" content="Namuna Law Associates" />
     <link rel="canonical" href="https://namunalawassociates.com.np/" />
     
     <!-- Open Graph -->
@@ -47,9 +47,8 @@
 
     <style>
         /* ============================================================
-        CSS RESET & BASE - Law Colors Only
-        Colors: Deep Navy (#1a1a2e), Gold (#b8860b), 
-                Charcoal (#f5f3f0), White (#ffffff)
+        CSS RESET & BASE - Strictly Black & White
+        All text, borders, lines, and buttons are #000 or #fff.
         ============================================================ */
         * {
             margin: 0;
@@ -64,7 +63,7 @@
         body {
             font-family: 'Inter', sans-serif;
             background: #ffffff;
-            color: #1a1a2e;
+            color: #000000;
             overflow-x: hidden;
             line-height: 1.8;
         }
@@ -73,17 +72,20 @@
             width: 6px;
         }
         ::-webkit-scrollbar-track {
-            background: #f0eee8;
+            background: #f0f0f0;
         }
         ::-webkit-scrollbar-thumb {
-            background: #b8860b;
+            background: #000000;
             border-radius: 4px;
         }
 
         a {
             text-decoration: none;
             color: inherit;
-            transition: color 0.3s ease;
+            transition: opacity 0.3s ease;
+        }
+        a:hover {
+            opacity: 0.6;
         }
 
         .container {
@@ -93,7 +95,7 @@
         }
 
         /* ============================================================
-        COOKIE CONSENT BANNER
+        COOKIE CONSENT BANNER - White Background, Black Text
         ============================================================ */
         .cookie-consent {
             position: fixed;
@@ -103,17 +105,19 @@
             z-index: 10000;
             width: 90%;
             max-width: 900px;
-            background: #1a1a2e;
-            border-left: 4px solid #b8860b;
+            background: #ffffff;
+            border-left: 4px solid #000000;
             border-radius: 8px;
             padding: 18px 28px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
             transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.5s ease;
             opacity: 0;
             visibility: hidden;
+            display: none;
         }
 
         .cookie-consent.show {
+            display: block;
             transform: translateX(-50%) translateY(0);
             opacity: 1;
             visibility: visible;
@@ -136,7 +140,7 @@
 
         .cookie-icon {
             font-size: 1.4rem;
-            color: #b8860b;
+            color: #000000;
             flex-shrink: 0;
         }
 
@@ -149,24 +153,25 @@
             font-family: 'Inter', sans-serif;
             font-size: 0.8rem;
             font-weight: 600;
-            color: #ffffff;
+            color: #000000;
             margin-bottom: 1px;
         }
 
         .cookie-text p {
             font-family: 'Inter', sans-serif;
             font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.5);
+            color: #000000;
             line-height: 1.5;
         }
 
         .cookie-text p a {
-            color: #b8860b;
-            font-weight: 500;
+            color: #000000;
+            font-weight: 600;
+            text-decoration: underline;
         }
 
         .cookie-text p a:hover {
-            color: #d4a017;
+            opacity: 0.6;
         }
 
         .cookie-actions {
@@ -182,38 +187,38 @@
             font-family: 'Inter', sans-serif;
             font-size: 0.75rem;
             font-weight: 600;
-            border: none;
+            border: 1px solid #000000;
             cursor: pointer;
             transition: all 0.3s ease;
             white-space: nowrap;
         }
 
         .cookie-btn-accept {
-            background: #b8860b;
+            background: #000000;
             color: #ffffff;
         }
-
         .cookie-btn-accept:hover {
-            background: #8a6a08;
+            background: #333333;
+            opacity: 1;
         }
 
         .cookie-btn-decline {
-            background: rgba(255, 255, 255, 0.06);
-            color: rgba(255, 255, 255, 0.5);
+            background: #f0f0f0;
+            color: #000000;
         }
-
         .cookie-btn-decline:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: #dddddd;
+            opacity: 1;
         }
 
         .cookie-btn-settings {
             background: transparent;
-            color: rgba(255, 255, 255, 0.3);
-            padding: 6px 10px;
+            color: #666666;
+            border-color: #cccccc;
         }
-
         .cookie-btn-settings:hover {
-            color: rgba(255, 255, 255, 0.6);
+            background: #f0f0f0;
+            opacity: 1;
         }
 
         @media (max-width: 768px) {
@@ -233,8 +238,7 @@
         }
 
         /* ============================================================
-        HEADER BANNER IMAGE - TOP CENTER (MINIMIZED WITH GAPS)
-        Aspect Ratio: 10:3 | Width: 500px | Height: 150px
+        HEADER BANNER IMAGE - TOP CENTER (SLIGHTLY INCREASED)
         ============================================================ */
         .header-banner {
             width: 100%;
@@ -247,12 +251,12 @@
 
         .header-banner img {
             width: 100%;
-            max-width: 300px;
+            max-width: 360px;   /* Increased from 300px */
             height: auto;
             aspect-ratio: 10 / 3;
             object-fit: contain;
             display: block;
-            background: #f5f3f0;
+            background: #f5f5f5;
         }
 
         @media (max-width: 600px) {
@@ -262,25 +266,24 @@
         }
 
         /* ============================================================
-        NAVIGATION TABS (Below Banner Image)
-        All tabs including Contact styled the same
+        NAVIGATION TABS - Black & White
         ============================================================ */
         .nav-tabs {
             background: #ffffff;
-            border-bottom: 2px solid #b8860b;
+            border-bottom: 2px solid #000000;
             padding: 0;
             display: flex;
             justify-content: center;
             gap: 0;
             flex-wrap: wrap;
-            box-shadow: 0 2px 10px rgba(184, 134, 11, 0.04);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
         }
 
         .nav-tabs a {
             font-family: 'Inter', sans-serif;
             font-size: 0.85rem;
             font-weight: 500;
-            color: #555;
+            color: #000000;
             padding: 14px 32px;
             transition: all 0.3s ease;
             position: relative;
@@ -296,14 +299,14 @@
             transform: translateX(-50%);
             width: 0;
             height: 4px;
-            background: #b8860b;
+            background: #000000;
             transition: width 0.3s ease;
             border-radius: 4px 4px 0 0;
         }
 
         .nav-tabs a:hover,
         .nav-tabs a.active {
-            color: #1a1a2e;
+            color: #000000;
             font-weight: 600;
         }
 
@@ -331,7 +334,7 @@
         }
 
         /* ============================================================
-        SECTION COMMON STYLES
+        SECTION COMMON STYLES - Black & White
         ============================================================ */
         section {
             padding: 70px 0;
@@ -349,35 +352,32 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 3px;
-            color: #b8860b;
-            background: rgba(184, 134, 11, 0.04);
+            color: #000000;
+            background: rgba(0, 0, 0, 0.04);
             padding: 4px 16px;
             border-radius: 2px;
             margin-bottom: 10px;
         }
 
-        .section-header h2 {
+        .section-header h2,
+        .section-header h1 {
             font-family: 'Playfair Display', serif;
             font-size: 2.6rem;
             font-weight: 700;
-            color: #1a1a2e;
+            color: #000000;
             letter-spacing: 0.5px;
-        }
-
-        .section-header h2 .gold {
-            color: #b8860b;
         }
 
         .section-header p {
             font-family: 'Inter', sans-serif;
-            color: #666;
+            color: #000000;
             font-size: 1rem;
             max-width: 650px;
             margin: 6px auto 0;
         }
 
         /* ============================================================
-        HOME CONTENT - Introduction in Paragraphs
+        HOME CONTENT - Black Text
         ============================================================ */
         .home-content {
             background: #ffffff;
@@ -390,15 +390,15 @@
 
         .home-content .content-text p {
             font-family: 'Inter', sans-serif;
-            color: #444;
+            color: #000000;
             font-size: 1rem;
             line-height: 1.9;
             margin-bottom: 18px;
-            text-align: justify;
+            text-align: left;
         }
 
         .home-content .content-text p strong {
-            color: #b8860b;
+            color: #000000;
             font-weight: 600;
         }
 
@@ -406,38 +406,90 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.4rem;
             font-weight: 400;
-            color: #b8860b;
+            color: #000000;
             text-align: center;
             font-style: italic;
             margin: 10px 0 25px;
         }
 
         /* ============================================================
-        CTA SECTION - White Background
+        ILLUSTRATIVE BOXES - Black & White
+        ============================================================ */
+        .service-boxes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 40px 0 30px;
+        }
+
+        .service-box {
+            background: #f9f9f9;
+            border-left: 4px solid #000000;
+            padding: 24px 22px;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .service-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 8px;
+            letter-spacing: 0.3px;
+        }
+
+        .service-box h3 i {
+            color: #000000;
+            margin-right: 8px;
+        }
+
+        .service-box p {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #000000;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .service-boxes {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .service-box {
+                padding: 20px;
+            }
+        }
+
+        /* ============================================================
+        CTA SECTION - Black & White
         ============================================================ */
         .cta-section {
             background: #ffffff;
             text-align: center;
             padding: 60px 0;
-            border-top: 2px solid #b8860b;
-            border-bottom: 2px solid #b8860b;
+            border-top: 2px solid #000000;
+            border-bottom: 2px solid #000000;
         }
 
         .cta-content h2 {
             font-family: 'Playfair Display', serif;
             font-size: 2.4rem;
             font-weight: 700;
-            color: #1a1a2e;
+            color: #000000;
             margin-bottom: 10px;
-        }
-
-        .cta-content h2 .gold {
-            color: #b8860b;
         }
 
         .cta-content p {
             font-family: 'Inter', sans-serif;
-            color: #666;
+            color: #000000;
             font-size: 1rem;
             max-width: 500px;
             margin: 0 auto 28px;
@@ -460,30 +512,29 @@
             font-weight: 600;
             font-size: 0.85rem;
             transition: all 0.3s ease;
-            border: none;
+            border: 2px solid #000000;
             cursor: pointer;
             letter-spacing: 0.5px;
         }
 
-        .btn-gold {
-            background: #b8860b;
+        .btn-black {
+            background: #000000;
             color: #ffffff;
         }
-
-        .btn-gold:hover {
-            background: #8a6a08;
+        .btn-black:hover {
+            background: #333333;
             color: #ffffff;
+            opacity: 1;
         }
 
-        .btn-outline-dark {
+        .btn-outline {
             background: transparent;
-            color: #1a1a2e;
-            border: 2px solid #b8860b;
+            color: #000000;
         }
-
-        .btn-outline-dark:hover {
-            background: #b8860b;
+        .btn-outline:hover {
+            background: #000000;
             color: #ffffff;
+            opacity: 1;
         }
 
         @media (max-width: 480px) {
@@ -502,12 +553,12 @@
         }
 
         /* ============================================================
-        FOOTER - White Background, No Reg. No.
+        FOOTER - Black & White
         ============================================================ */
         .site-footer {
             background: #ffffff;
             padding: 50px 0 24px;
-            border-top: 3px solid #b8860b;
+            border-top: 3px solid #000000;
         }
 
         .footer-grid {
@@ -521,17 +572,13 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.4rem;
             font-weight: 700;
-            color: #1a1a2e;
+            color: #000000;
             margin-bottom: 2px;
-        }
-
-        .footer-brand h3 .gold {
-            color: #b8860b;
         }
 
         .footer-brand p {
             font-family: 'Inter', sans-serif;
-            color: #666;
+            color: #000000;
             font-size: 0.88rem;
             line-height: 1.8;
             max-width: 300px;
@@ -543,9 +590,9 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #1a1a2e;
+            color: #000000;
             margin-bottom: 14px;
-            border-bottom: 2px solid #b8860b;
+            border-bottom: 2px solid #000000;
             padding-bottom: 8px;
             display: inline-block;
         }
@@ -560,24 +607,24 @@
         .footer-links ul li a {
             font-family: 'Inter', sans-serif;
             font-size: 0.85rem;
-            color: #777;
-            transition: color 0.3s ease;
+            color: #000000;
+            transition: opacity 0.3s ease;
         }
 
         .footer-links ul li a:hover {
-            color: #b8860b;
+            opacity: 0.5;
         }
 
         .footer-bottom {
             text-align: center;
             padding-top: 20px;
-            border-top: 1px solid rgba(0, 0, 0, 0.04);
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
         }
 
         .footer-bottom p {
             font-family: 'Inter', sans-serif;
-            font-size: 0.7rem;
-            color: #999;
+            font-size: 0.8rem;
+            color: #000000;
             letter-spacing: 0.5px;
         }
 
@@ -631,9 +678,9 @@
 <body>
 
     <!-- ============================================================
-    COOKIE CONSENT BANNER
+    COOKIE CONSENT BANNER - White Background
     ============================================================ -->
-    <div id="cookie-consent" class="cookie-consent" style="display:none;">
+    <div id="cookie-consent" class="cookie-consent">
         <div class="cookie-container">
             <div class="cookie-content">
                 <div class="cookie-icon"><i class="fas fa-cookie-bite"></i></div>
@@ -651,52 +698,68 @@
     </div>
 
     <!-- ============================================================
-    HEADER BANNER IMAGE - TOP CENTER (WITH GAPS)
+    HEADER BANNER IMAGE - TOP CENTER (SLIGHTLY INCREASED)
     ============================================================ -->
     <div class="header-banner">
-        <img src="images/nla.png" alt="Namuna Law Associates" width="500" height="150" />
+        <img src="images/nla.png" alt="Namuna Law Associates - Your trusted legal partner in Pokhara, Nepal" width="500" height="150" loading="eager" />
     </div>
 
     <!-- ============================================================
-    NAVIGATION TABS (Below Banner Image)
+    NAVIGATION TABS
     ============================================================ -->
-    <div class="nav-tabs">
-        <a href="index.html" class="active">Home</a>
+    <nav class="nav-tabs" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
         <a href="about.html">About</a>
         <a href="advocate.html">Advocates</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
-    </div>
+    </nav>
 
     <!-- ============================================================
-    HOME CONTENT - Introduction in Paragraphs
+    HOME CONTENT - Introduction + Four Boxes
     ============================================================ -->
-    <section class="home-content" data-aos="fade-up">
+    <section class="home-content" data-aos="fade-up" id="main-content">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Welcome</span>
-                <h2>Namuna <span class="gold">Law</span> Associates</h2>
+                <h1>Namuna Law Associates</h1>
                 <p class="tagline">Your trusted partner for legal services in Nepal.</p>
             </div>
             <div class="content-text">
                 <p>
-                    <strong>Namuna Law Associates Private Limited</strong> is a full-service law firm based in Pokhara, Nepal. We are a team of dedicated advocates and legal professionals committed to providing high-quality legal services with integrity and professionalism. Our firm was established with a vision to offer comprehensive legal solutions across a wide spectrum of practice areas, combining traditional legal expertise with modern research and technology.
+                    <strong>Namuna Law Associates</strong> is a full-service law firm based in Pokhara, Nepal. We are a team of dedicated advocates and legal professionals committed to providing high-quality legal services with integrity and professionalism. Our firm was established with a vision to offer comprehensive legal solutions across a wide spectrum of practice areas, combining traditional legal expertise with modern research and technology.
                 </p>
                 <p>
                     Our firm is led by seasoned advocates with profound knowledge of Nepali law and legal procedure. We bring decades of courtroom experience and strategic insight to every case we handle. Our team is guided by the vision of <strong>Prof. Dr. Gyaneshwer Parajuli</strong> and <strong>Dr. Shobha Devi Poudel</strong>, who bring together decades of legal experience, academic excellence, and a deep commitment to justice.
                 </p>
-                <p>
-                    <strong>Full-Service Firm:</strong> From document preparation and legal drafting to complex litigation and court representation, we provide comprehensive legal services under one roof. Our clients benefit from seamless, integrated legal support that ensures continuity and consistency throughout their legal journey. Whether you are an individual seeking personal legal advice or a business requiring corporate legal assistance, we have the expertise and resources to serve you effectively.
-                </p>
-                <p>
-                    <strong>Expert Advocacy:</strong> Our firm is led by seasoned advocates with profound knowledge of Nepali law and legal procedure. We bring decades of courtroom experience and strategic insight to every case we handle. Our advocates are well-versed in the intricacies of Nepali legal systems and are committed to achieving the best possible outcomes for our clients through diligent preparation and persuasive advocacy.
-                </p>
-                <p>
-                    <strong>Client-Centric Approach:</strong> We understand that every legal matter is unique. Our personalized approach ensures that each client receives tailored solutions that address their specific needs and circumstances with compassion and understanding. We take the time to listen to our clients, understand their concerns, and develop legal strategies that align with their goals and values.
-                </p>
-                <p>
-                    <strong>Legal Research:</strong> We conduct comprehensive legal research and analysis to develop informed, evidence-based strategies. Our commitment to thorough preparation ensures that every client receives the strongest possible representation. We stay abreast of the latest legal developments, precedents, and statutory changes to provide our clients with accurate, timely, and effective legal advice.
-                </p>
+
+                <!-- ========== FOUR ILLUSTRATIVE BOXES ========== -->
+                <div class="service-boxes">
+                    <!-- Full‑Service Firm -->
+                    <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+                        <h3><i class="fas fa-scale-balanced"></i> Full‑Service Firm</h3>
+                        <p>From document preparation and legal drafting to complex litigation and court representation, we provide comprehensive legal services under one roof. Our clients benefit from seamless, integrated legal support that ensures continuity and consistency throughout their legal journey. Whether you are an individual seeking personal legal advice or a business requiring corporate legal assistance, we have the expertise and resources to serve you effectively.</p>
+                    </div>
+
+                    <!-- Expert Advocacy -->
+                    <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+                        <h3><i class="fas fa-gavel"></i> Expert Advocacy</h3>
+                        <p>Our firm is led by seasoned advocates with profound knowledge of Nepali law and legal procedure. We bring decades of courtroom experience and strategic insight to every case we handle. Our advocates are well‑versed in the intricacies of Nepali legal systems and are committed to achieving the best possible outcomes for our clients through diligent preparation and persuasive advocacy.</p>
+                    </div>
+
+                    <!-- Client‑Centric Approach -->
+                    <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+                        <h3><i class="fas fa-hand-holding-heart"></i> Client‑Centric Approach</h3>
+                        <p>We understand that every legal matter is unique. Our personalized approach ensures that each client receives tailored solutions that address their specific needs and circumstances with compassion and understanding. We take the time to listen to our clients, understand their concerns, and develop legal strategies that align with their goals and values.</p>
+                    </div>
+
+                    <!-- Legal Research -->
+                    <div class="service-box" data-aos="fade-up" data-aos-delay="400">
+                        <h3><i class="fas fa-book-open"></i> Legal Research</h3>
+                        <p>We conduct comprehensive legal research and analysis to develop informed, evidence‑based strategies. Our commitment to thorough preparation ensures that every client receives the strongest possible representation. We stay abreast of the latest legal developments, precedents, and statutory changes to provide our clients with accurate, timely, and effective legal advice.</p>
+                    </div>
+                </div>
+
                 <p>
                     We believe that access to quality legal representation is a fundamental right, and we strive to make justice accessible to all who seek our assistance. At Namuna Law Associates, we are unwavering in our commitment to upholding the highest standards of legal practice, ensuring that every client receives the dedicated service they deserve.
                 </p>
@@ -705,20 +768,19 @@
     </section>
 
     <!-- ============================================================
-    CTA SECTION - White Background
-    Schedule Consultation links to advshobhap@gmail.com
+    CTA SECTION
     ============================================================ -->
     <section class="cta-section" data-aos="fade-up">
         <div class="container">
             <div class="cta-content">
-                <h2>Need <span class="gold">Legal</span> Assistance?</h2>
+                <h2>Need Legal Assistance?</h2>
                 <p>Contact us today for a confidential consultation with our experienced advocates.</p>
                 <div class="cta-buttons">
-                    <a href="mailto:advshobhap@gmail.com?subject=Schedule%20Consultation%20-%20Namuna%20Law%20Associates&body=Dear%20Team%2C%0A%0AI%20would%20like%20to%20schedule%20a%20consultation%20with%20your%20advocates.%20Please%20let%20me%20know%20your%20available%20timings.%0A%0AName%3A%0APhone%3A%0APreferred%20Date%3A%0A%0AThank%20you." class="btn btn-gold">
+                    <a href="mailto:advshobhap@gmail.com?subject=Schedule%20Consultation%20-%20Namuna%20Law%20Associates&body=Dear%20Team%2C%0A%0AI%20would%20like%20to%20schedule%20a%20consultation%20with%20your%20advocates.%20Please%20let%20me%20know%20your%20available%20timings.%0A%0AName%3A%0APhone%3A%0APreferred%20Date%3A%0A%0AThank%20you." class="btn btn-black">
                         <i class="fas fa-calendar-check"></i>
                         Schedule Consultation
                     </a>
-                    <a href="services.html" class="btn btn-outline-dark">
+                    <a href="services.html" class="btn btn-outline">
                         <i class="fas fa-arrow-right"></i>
                         View Services
                     </a>
@@ -728,13 +790,13 @@
     </section>
 
     <!-- ============================================================
-    FOOTER - White Background, No Reg. No.
+    FOOTER
     ============================================================ -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3>Namuna <span class="gold">Law</span> Associates</h3>
+                    <h3>Namuna Law Associates</h3>
                     <p>
                         Pokhara Metropolitan City, Ward No. 7<br />
                         Kaski District, Nepal
@@ -792,7 +854,6 @@
                 cookieConsent.style.display = 'none';
             } else {
                 setTimeout(() => {
-                    cookieConsent.style.display = 'block';
                     cookieConsent.classList.add('show');
                 }, 1000);
             }
