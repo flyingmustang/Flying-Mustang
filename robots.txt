@@ -1,0 +1,12 @@
+# robots.txt for Namuna Law Associates
+# https://namunalawassociates.com.np/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://namunalawassociates.com.np/sitemap.xml
+
+# Disallow admin or private directories (if any)
+# Disallow: /admin/
+# Disallow: /private/
